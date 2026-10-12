@@ -1,0 +1,289 @@
+/* ============================================================
+   Moss & Molt — Brand Design System v1
+   Natural aquatic + premium + restrained pixel character.
+   Loaded after base.css; uses theme palette custom properties.
+   ============================================================ */
+
+:root {
+  /* Brand tokens (mirror settings_data.json color_palette) */
+  --mm-abyss: #08120f;          /* page background: near-black green */
+  --mm-ink: #0b1f1a;            /* elevated dark surface */
+  --mm-forest: #17452f;         /* organic brand green */
+  --mm-moss: #7bc96f;           /* muted moss accent */
+  --mm-moss-deep: #1e6b3a;
+  --mm-teal: #2bb3a3;           /* aquatic interactive accent */
+  --mm-aqua: #7fd4c1;           /* soft aqua highlight */
+  --mm-foam: #edf5ee;           /* readable off-white */
+  --mm-coral: #f0883e;          /* restrained emphasis only */
+  --mm-line: rgb(237 245 238 / 0.14);
+  --mm-radius-sm: 4px;
+  --mm-radius-md: 10px;
+  --mm-radius-pill: 999px;
+  --mm-content: 1200px;
+  --mm-pixel: 4px;              /* stepped-corner unit for brand details */
+}
+
+/* ---- Type scale: Jersey 20 display + Atkinson body (see header custom-liquid) ---- */
+.mm-display, h1, h2 {
+  text-wrap: balance;
+  letter-spacing: 0.01em;
+}
+.mm-eyebrow {
+  font-family: var(--font-subheading--family);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mm-aqua);
+}
+
+/* ---- Pixel-stepped brand detail (restrained: logo, badges, dividers only) ---- */
+.mm-pixel-corners {
+  clip-path: polygon(
+    0 var(--mm-pixel), var(--mm-pixel) var(--mm-pixel),
+    var(--mm-pixel) 0, calc(100% - var(--mm-pixel)) 0,
+    calc(100% - var(--mm-pixel)) var(--mm-pixel), 100% var(--mm-pixel),
+    100% calc(100% - var(--mm-pixel)), calc(100% - var(--mm-pixel)) calc(100% - var(--mm-pixel)),
+    calc(100% - var(--mm-pixel)) 100%, var(--mm-pixel) 100%,
+    var(--mm-pixel) calc(100% - var(--mm-pixel)), 0 calc(100% - var(--mm-pixel))
+  );
+}
+
+/* ---- Header: tighten, align, premium ---- */
+#header-component {
+  border-bottom: 1px solid var(--mm-line);
+}
+#header-component .header__row--top {
+  min-height: 64px;
+}
+.header-logo img, [data-header-logo] img {
+  image-rendering: auto;
+}
+
+/* ---- Buttons: disciplined, clear hierarchy ---- */
+.button, .button-secondary {
+  border-radius: var(--mm-radius-md);
+  font-weight: 700;
+  transition: transform 0.15s ease-out, background-color 0.2s ease-out, border-color 0.2s ease-out;
+}
+.button:active, .button-secondary:active {
+  transform: translateY(1px);
+}
+
+/* ---- Product cards: product is the focus ---- */
+.product-card__content {
+  border-radius: var(--mm-radius-sm);
+}
+.product-card .product-title {
+  line-height: 1.3;
+}
+.product-card img {
+  background: var(--mm-ink);
+}
+
+/* ---- Collection cards: quiet frames, no neon ---- */
+.collection-card {
+  border-radius: var(--mm-radius-sm);
+  overflow: hidden;
+}
+
+/* ---- Badges: small pixel-stepped tag, no glow ---- */
+.product-badges__badge {
+  border-radius: 3px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ---- Forms: comfortable targets, visible focus ---- */
+input, select, textarea, button {
+  min-height: 44px;
+}
+:focus-visible {
+  outline: 2px solid var(--mm-teal);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ---- Footer: organized, readable contrast on deep blue/green ---- */
+footer a {
+  text-underline-offset: 3px;
+}
+footer a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* ---- Announcement / dividers: thin, intentional ---- */
+.mm-divider {
+  height: 1px;
+  background: var(--mm-line);
+  border: 0;
+}
+
+/* ---- Motion discipline ---- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---- Responsive rhythm ---- */
+@media (max-width: 749px) {
+  :root { --mm-pixel: 3px; }
+  #header-component .header__row--top { min-height: 56px; }
+}
+/* ============================================================
+   Moss & Molt — Design System v2 (second pass)
+   Appended layer: full storefront language. v1 tokens kept.
+   Principles: hierarchy first, hue-consistent surfaces,
+   tabular prices, generous targets, visible focus, no dead ends.
+   ============================================================ */
+
+/* ---------- A. Document ---------- */
+:root { color-scheme: dark; }
+html { -webkit-tap-highlight-color: rgb(43 179 163 / 0.25); }
+body { text-rendering: optimizeLegibility; }
+::selection { background: var(--mm-teal); color: var(--mm-abyss); }
+button, a, input, select, textarea { touch-action: manipulation; }
+h1, h2, h3, h4 { scroll-margin-top: calc(var(--header-height, 64px) + 16px); }
+.price, .product-price, [data-price] { font-variant-numeric: tabular-nums; }
+
+/* ---------- B. Type scale ---------- */
+.hero h1, h1.mm-display {
+  font-size: clamp(2.25rem, 1.5rem + 3.5vw, 3.75rem);
+  line-height: 1.04;
+  max-width: 22ch;
+}
+h2 { line-height: 1.1; }
+.rte p, .rte li, p { max-width: 68ch; }
+.product-title { font-weight: 700; letter-spacing: 0.005em; }
+
+/* ---------- C. Announcement bar ---------- */
+.announcement-bar, [data-announcement-bar] {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+/* ---------- D. Header & navigation ---------- */
+#header-component .menu-link, #header-component a[href] { text-underline-offset: 4px; }
+#header-component nav a:hover { color: var(--mm-aqua); }
+#header-component nav a[aria-current="page"] {
+  color: var(--mm-aqua);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+#header-component .header-actions button:hover { color: var(--mm-aqua); }
+#header-component .cart-bubble { font-variant-numeric: tabular-nums; }
+
+/* ---------- E. Hero ---------- */
+.hero__content-wrapper { max-width: 44rem; }
+.hero .hero__content-wrapper p:first-child { margin-block-end: 0.5rem; }
+.hero h1 { margin-block: 0.25rem 0.75rem; }
+.hero__content-wrapper .group { margin-block-start: 1.25rem; }
+@media (max-width: 749px) {
+  .hero h1, .hero h1.mm-display { font-size: clamp(2.1rem, 9vw, 2.9rem); }
+  .hero__content-wrapper { padding-block: 3rem; }
+}
+
+/* ---------- F. Section rhythm & pixel rule ---------- */
+.shopify-section + .shopify-section { border-block-start: 1px solid var(--mm-line); }
+.mm-pixel-rule {
+  height: 3px;
+  background: var(--mm-teal);
+  border: 0;
+  position: relative;
+}
+.mm-pixel-rule::after {
+  content: "";
+  position: absolute;
+  inset-block-start: -3px;
+  inset-inline-start: 12%;
+  width: 9px;
+  height: 9px;
+  background: var(--mm-coral);
+}
+
+/* ---------- G. Product cards ---------- */
+.product-card { border-radius: var(--mm-radius-sm); }
+.product-card__media, .product-card img { border-radius: var(--mm-radius-sm) var(--mm-radius-sm) 0 0; }
+.product-card .product-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.6em;
+}
+.product-card:hover { transform: translateY(-2px); }
+.product-card:hover .product-title { color: var(--mm-aqua); }
+.product-card .price { font-weight: 700; }
+/* Sold-out: redundant cue, never color alone */
+.product-card .badge--sold-out, .badge--soldout {
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+/* ---------- H. Collection cards ---------- */
+.collection-card { border-radius: var(--mm-radius-sm); overflow: hidden; }
+.collection-card img { aspect-ratio: 1 / 1; object-fit: cover; }
+.collection-card:hover img { transform: scale(1.02); }
+.collection-card img { transition: transform 0.35s ease-out; }
+.collection-card__title, .collection-title {
+  font-family: var(--font-heading--family);
+  letter-spacing: 0.04em;
+}
+
+/* ---------- I. Product page ---------- */
+.product-information__title h1, .product-details h1 { font-size: clamp(1.9rem, 1.3rem + 2vw, 2.75rem); }
+.variant-picker button, .variant-option {
+  border-radius: var(--mm-radius-md);
+  min-height: 44px;
+}
+.quantity-selector { border-radius: var(--mm-radius-md); }
+.add-to-cart-button, .buy-buttons .button { min-height: 52px; font-size: 1.0625rem; }
+.product-description, .product-details .rte { line-height: 1.65; }
+details.accordion { border-block: 1px solid var(--mm-line); }
+details.accordion summary { min-height: 52px; cursor: pointer; }
+details.accordion summary:focus-visible { outline: 2px solid var(--mm-teal); outline-offset: 2px; }
+
+/* ---------- J. Footer ---------- */
+footer h2, footer h3 { font-family: var(--font-heading--family); letter-spacing: 0.05em; }
+footer input[type="email"] { font-size: 1rem; min-height: 52px; }
+footer .social-links a { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; }
+footer nav a:hover { color: var(--mm-aqua); }
+
+/* ---------- K. Forms, search, cart ---------- */
+input, select, textarea { font-size: 1rem; } /* >=16px stops iOS zoom */
+label { font-weight: 700; font-size: 0.875rem; }
+input[aria-invalid="true"], .field--error input {
+  border-color: var(--mm-coral);
+  outline: 1px solid var(--mm-coral);
+}
+.form-error, .error-message { color: var(--mm-coral); font-weight: 700; }
+.cart-drawer__empty, .search-empty { padding-block: 3rem; text-align: center; }
+.cart-item { border-block-end: 1px solid var(--mm-line); }
+select {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+button[disabled], .button[disabled] { opacity: 0.5; cursor: not-allowed; }
+
+/* ---------- L. Reviews & social quiet ---------- */
+.judgeme-carrier, [data-judgeme] { --jd-text: var(--mm-foam); }
+
+/* ---------- M. Responsive guards ---------- */
+img { max-width: 100%; }
+.page-width--narrow, .page-width { overflow-wrap: break-word; }
+@media (max-width: 749px) {
+  .button, .button-secondary { min-height: 48px; }
+  table { display: block; overflow-x: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .product-card:hover, .collection-card:hover img { transform: none; }
+}
+

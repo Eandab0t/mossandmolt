@@ -1,0 +1,165 @@
+{
+    "type":  "header",
+    "name":  "t:names.header",
+    "sections":  {
+                     "header_announcements_9jGBFp":  {
+                                                         "type":  "header-announcements",
+                                                         "blocks":  {
+                                                                        "announcement_BxgCk9":  {
+                                                                                                    "type":  "_announcement",
+                                                                                                    "disabled":  false,
+                                                                                                    "settings":  {
+                                                                                                                     "text":  "**WEBSITE UNDER CONSTRUCTION, NO PURCHASES ACCEPTED AT THIS TIME**",
+                                                                                                                     "link":  "",
+                                                                                                                     "font":  "var(--font-subheading--family)",
+                                                                                                                     "font_size":  "0.75rem",
+                                                                                                                     "weight":  "",
+                                                                                                                     "letter_spacing":  "normal",
+                                                                                                                     "case":  "none",
+                                                                                                                     "text_color":  ""
+                                                                                                                 },
+                                                                                                    "blocks":  {
+
+                                                                                                               }
+                                                                                                }
+                                                                    },
+                                                         "block_order":  [
+                                                                             "announcement_BxgCk9"
+                                                                         ],
+                                                         "disabled":  false,
+                                                         "name":  "t:names.announcement_bar",
+                                                         "settings":  {
+                                                                          "speed":  5,
+                                                                          "section_width":  "page-width",
+                                                                          "background_color":  "#0B1F1A",
+                                                                          "divider_width":  1,
+                                                                          "divider_color":  "{{ settings.color_palette.color2 }}",
+                                                                          "padding-block-start":  15,
+                                                                          "padding-block-end":  15
+                                                                      }
+                                                     },
+                     "header_section":  {
+                                            "type":  "header",
+                                            "blocks":  {
+                                                           "header-logo":  {
+                                                                               "type":  "_header-logo",
+                                                                               "static":  true,
+                                                                               "settings":  {
+                                                                                                "hide_logo_on_home_page":  false,
+                                                                                                "padding-block-start":  0,
+                                                                                                "padding-block-end":  0
+                                                                                            },
+                                                                               "blocks":  {
+
+                                                                                          }
+                                                                           },
+                                                           "header-menu":  {
+                                                                               "type":  "_header-menu",
+                                                                               "static":  true,
+                                                                               "settings":  {
+                                                                                                "menu":  "main-menu",
+                                                                                                "background_color":  "{{ settings.color_palette.color2 }}",
+                                                                                                "text_color":  "{{ settings.color_palette.foreground }}",
+                                                                                                "type_font_primary_size":  "1.125rem",
+                                                                                                "menu_font_style":  "regular",
+                                                                                                "type_font_primary_link":  "heading",
+                                                                                                "type_case_primary_link":  "uppercase",
+                                                                                                "menu_style":  "featured_products",
+                                                                                                "featured_products_aspect_ratio":  "4 / 5",
+                                                                                                "featured_collections_aspect_ratio":  "16 / 9",
+                                                                                                "image_border_radius":  0,
+                                                                                                "navigation_bar":  false,
+                                                                                                "background_color_navigation_bar":  "{{ settings.color_palette.background }}",
+                                                                                                "text_color_navigation_bar":  "",
+                                                                                                "drawer_accordion":  false,
+                                                                                                "drawer_accordion_expand_first":  false,
+                                                                                                "drawer_dividers":  false
+                                                                                            },
+                                                                               "blocks":  {
+
+                                                                                          }
+                                                                           }
+                                                       },
+                                            "custom_css":  [
+
+                                                           ],
+                                            "settings":  {
+                                                             "logo_position":  "left",
+                                                             "menu_position":  "center",
+                                                             "menu_row":  "top",
+                                                             "customer_account_menu":  "customer-account-main-menu",
+                                                             "show_search":  false,
+                                                             "search_position":  "right",
+                                                             "search_row":  "top",
+                                                             "show_country":  true,
+                                                             "country_selector_style":  false,
+                                                             "show_language":  true,
+                                                             "localization_font":  "heading",
+                                                             "localization_font_size":  "1rem",
+                                                             "localization_position":  "right",
+                                                             "localization_row":  "top",
+                                                             "section_width":  "full-width",
+                                                             "section_height":  "standard",
+                                                             "enable_sticky_header":  "always",
+                                                             "divider_width":  0,
+                                                             "divider_size":  "page-width",
+                                                             "divider_color":  "",
+                                                             "border_width":  0,
+                                                             "bottom_border_color":  "{{ settings.color_palette.background }}",
+                                                             "actions_display_style":  "icon",
+                                                             "actions_font_size":  "0.875rem",
+                                                             "actions_font":  "body",
+                                                             "actions_text_case":  "none",
+                                                             "background_color_top":  "#000000",
+                                                             "text_color_top":  "{{ settings.color_palette.foreground }}",
+                                                             "background_color_bottom":  "",
+                                                             "text_color_bottom":  "",
+                                                             "bubble_style":  "custom",
+                                                             "bubble_background_color":  "{{ settings.color_palette.foreground }}",
+                                                             "bubble_text_color":  "{{ settings.color_palette.background }}",
+                                                             "enable_transparent_header_home":  false,
+                                                             "home_inverse_logo":  false,
+                                                             "text_color_transparent_home":  "",
+                                                             "enable_transparent_header_product":  false,
+                                                             "product_inverse_logo":  false,
+                                                             "text_color_transparent_product":  "",
+                                                             "enable_transparent_header_collection":  false,
+                                                             "collection_inverse_logo":  false,
+                                                             "text_color_transparent_collection":  ""
+                                                         }
+                                        },
+                     "custom_liquid_b3Tz9C":  {
+                                                  "type":  "custom-liquid",
+                                                  "name":  "t:names.custom_liquid",
+                                                  "settings":  {
+                                                                   "custom_liquid":  "\u003clink rel=\"preconnect\" href=\"https://fonts.googleapis.com\"\u003e\n\u003clink rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin\u003e\n\u003clink href=\"https://fonts.googleapis.com/css2?family=Jersey+20\u0026family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400\u0026display=swap\" rel=\"stylesheet\"\u003e\n\u003cstyle\u003e\nhtml:root{\n--font-heading--family:\"Jersey 20\",\"Atkinson Hyperlegible\",system-ui,sans-serif;--font-heading--weight:400;--font-heading--style:normal;\n--font-accent--family:\"Jersey 20\",\"Atkinson Hyperlegible\",system-ui,sans-serif;--font-accent--weight:400;--font-accent--style:normal;\n--font-body--family:\"Atkinson Hyperlegible\",system-ui,-apple-system,sans-serif;--font-body--weight:400;--font-body--style:normal;\n--font-subheading--family:\"Atkinson Hyperlegible\",system-ui,sans-serif;--font-subheading--weight:700;--font-subheading--style:normal}\nh1,h2,.mm-display{letter-spacing:.01em;text-wrap:balance}\n.button,.button-secondary{font-size:1rem;letter-spacing:.02em}\n\u003c/style\u003e",
+                                                                   "background_color":  "",
+                                                                   "section_width":  "page-width",
+                                                                   "padding-block-start":  0,
+                                                                   "padding-block-end":  0
+                                                               }
+                                              },
+                     "divider_Mwzp4G":  {
+                                            "type":  "divider",
+                                            "disabled":  true,
+                                            "name":  "t:names.divider_section",
+                                            "settings":  {
+                                                             "background_color":  "{{ settings.color_palette.foreground }}",
+                                                             "divider_color":  "{{ settings.color_palette.foreground }}",
+                                                             "section_width":  "full-width",
+                                                             "thickness":  0.5,
+                                                             "corner_radius":  "square",
+                                                             "width_percent":  100,
+                                                             "alignment_horizontal":  "center",
+                                                             "padding-block-start":  16,
+                                                             "padding-block-end":  16
+                                                         }
+                                        }
+                 },
+    "order":  [
+                  "header_announcements_9jGBFp",
+                  "header_section",
+                  "custom_liquid_b3Tz9C",
+                  "divider_Mwzp4G"
+              ]
+}

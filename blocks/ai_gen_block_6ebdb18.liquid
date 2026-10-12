@@ -1,0 +1,291 @@
+{% doc %}
+  @prompt
+    Create a revolving/slideshow banner section with multiple slides that auto-rotate. Each slide should support a background image, heading text, subheading text, and a call-to-action button. Include controls for slide navigation (dots or arrows), configurable auto-play speed, and smooth transition animations between slides.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-slideshow-{{ ai_gen_id }} {
+    display: block;
+    position: relative;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    min-height: {{ block.settings.slide_height }}px;
+    overflow: hidden;
+    isolation: isolate;
+    background: #173b32;
+    color: #ffffff;
+  }
+
+  .ai-slideshow-{{ ai_gen_id }} .ai-slideshow__slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: {{ block.settings.content_alignment }};
+    padding: clamp(24px, 6vw, 80px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 600ms ease, visibility 600ms ease;
+    pointer-events: none;
+  }
+
+  .ai-slideshow-{{ ai_gen_id }} .ai-slideshow__slide.is-active {
+    position: relative;
+    min-height: {{ block.settings.slide_height }}px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .ai-slideshow-{{ ai_gen_id }} .ai-slideshow__media,
+  .ai-slideshow-{{ ai_gen_id }} .ai-slideshow__shade {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .ai-slideshow-{{ ai_gen_id }} .ai-slideshow__media {
+    object-fit: cover;
+  }
+
+  .ai-slideshow-{{ ai_gen_id }} .ai-slideshow__placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #315a4e;
+  }
+
+  .ai-slideshow-{{ ai_gen_id }} .ai-slideshow__placeholder svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+  }
+
+  .ai-slideshow-{{ ai_gen_id }} .ai-slideshow__shade {
+    background: rgba(0, 0, 0, {{ block.settings.overlay_opacity | divided_by: 100.0 }});
+  }
+
+  .ai-slideshow-{{ ai_gen_id }} .ai-slideshow__content {
+    position: relative;
+    z-index: 1;
+    width: min(100%, 720px);
+    text-align: {{ block.settings.content_alignment }};
+    color: #ffffff;
+  }
+
+  .ai-slideshow-{{ ai_gen_id }} .ai-slideshow__heading {
+    margin: 0 0 14px;
+    color: inherit;
+    font-size: clamp(32px, 5vw, 64px);
+    line-height: 1.08;
+  }
+
+  .ai-slideshow-{{ ai_gen_id }} .ai-slideshow__subheading {
+    margin: 0 0 24px;
+    color: inherit;
+    font-size: clamp(16px, 2vw, 21px);
+    line-height: 1.5;
+  }
+
+  .ai-slideshow-{{ ai_gen_id }} .ai-slideshow__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px 24px;
+    border-radius: 14px;
+    background: #ffffff;
+    color: #111111;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .ai-slideshow-{{ ai_gen_id }} .ai-slideshow__cta:hover {
+    background: #eeeeee;
+  }
+
+  .ai-slideshow-{{ ai_gen_id }} .ai-slideshow__controls {
+    position: absolute;
+    z-index: 2;
+    inset-inline: 16px;
+    bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .ai-slideshow-{{ ai_gen_id }} .ai-slideshow__arrow,
+  .ai-slideshow-{{ ai_gen_id }} .ai-slideshow__dot {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ffffff;
+    background: #111111;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .ai-slideshow-{{ ai_gen_id }} .ai-slideshow__arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .ai-slideshow-{{ ai_gen_id }} .ai-slideshow__dot {
+    width: 14px;
+    height: 14px;
+    padding: 0;
+    border-radius: 50%;
+  }
+
+  .ai-slideshow-{{ ai_gen_id }} .ai-slideshow__dot[aria-current="true"] {
+    background: #ffffff;
+    box-shadow: inset 0 0 0 3px #111111;
+  }
+
+  .ai-slideshow-{{ ai_gen_id }} button:focus-visible,
+  .ai-slideshow-{{ ai_gen_id }} a:focus-visible {
+    outline: 3px solid #ffdf6e;
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ai-slideshow-{{ ai_gen_id }} .ai-slideshow__slide {
+      transition: none;
+    }
+  }
+{% endstyle %}
+
+<ai-slideshow-{{ ai_gen_id }} class="ai-slideshow-{{ ai_gen_id }}" data-autoplay="{{ block.settings.autoplay }}" data-speed="{{ block.settings.autoplay_speed | times: 1000 }}" aria-label="Promotional slides" {{ block.shopify_attributes }}>
+  {% for i in (1..3) %}
+    {% liquid
+      assign image_key = 'slide_' | append: i | append: '_image'
+      assign heading_key = 'slide_' | append: i | append: '_heading'
+      assign subheading_key = 'slide_' | append: i | append: '_subheading'
+      assign label_key = 'slide_' | append: i | append: '_button_label'
+      assign link_key = 'slide_' | append: i | append: '_button_link'
+      assign slide_image = block.settings[image_key]
+      assign slide_heading = block.settings[heading_key]
+      assign slide_subheading = block.settings[subheading_key]
+      assign slide_label = block.settings[label_key]
+      assign slide_link = block.settings[link_key]
+    %}
+    <div class="ai-slideshow__slide{% if forloop.first %} is-active{% endif %}" data-slide="{{ forloop.index0 }}" aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}">
+      {% if slide_image != blank %}
+        <img class="ai-slideshow__media" src="{{ slide_image | image_url: width: 2400 }}" alt="{{ slide_image.alt | escape }}" loading="lazy" width="{{ slide_image.width }}" height="{{ slide_image.height }}">
+      {% else %}
+        <div class="ai-slideshow__placeholder">{{ 'image' | placeholder_svg_tag }}</div>
+      {% endif %}
+      <div class="ai-slideshow__shade" aria-hidden="true"></div>
+      <div class="ai-slideshow__content">
+        {% if slide_heading != blank %}<h2 class="ai-slideshow__heading">{{ slide_heading | escape }}</h2>{% endif %}
+        {% if slide_subheading != blank %}<p class="ai-slideshow__subheading">{{ slide_subheading | escape }}</p>{% endif %}
+        {% if slide_label != blank and slide_link != blank %}<a class="ai-slideshow__cta" href="{{ slide_link }}">{{ slide_label | escape }}</a>{% endif %}
+        {% if slide_image == blank %}<p>Choose a background image for this slide.</p>{% endif %}
+      </div>
+    </div>
+  {% endfor %}
+  <div class="ai-slideshow__controls" aria-label="Slide navigation">
+    <button class="ai-slideshow__arrow" type="button" data-direction="previous" aria-label="Previous slide">‹</button>
+    {% for i in (1..3) %}<button class="ai-slideshow__dot" type="button" data-go-to="{{ forloop.index0 }}" aria-label="Go to slide {{ forloop.index }}" aria-current="{% if forloop.first %}true{% else %}false{% endif %}"></button>{% endfor %}
+    <button class="ai-slideshow__arrow" type="button" data-direction="next" aria-label="Next slide">›</button>
+  </div>
+</ai-slideshow-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    const tagName = 'ai-slideshow-{{ ai_gen_id }}';
+    if (customElements.get(tagName)) return;
+    class AiSlideshow extends HTMLElement {
+      connectedCallback() {
+        this.slides = Array.from(this.querySelectorAll('[data-slide]'));
+        this.dots = Array.from(this.querySelectorAll('[data-go-to]'));
+        this.current = 0;
+        this.timer = null;
+        this.addEventListener('click', (event) => {
+          const dot = event.target.closest('[data-go-to]');
+          const arrow = event.target.closest('[data-direction]');
+          if (dot) this.show(Number(dot.dataset.goTo));
+          if (arrow) this.show(this.current + (arrow.dataset.direction === 'next' ? 1 : -1));
+        });
+        this.addEventListener('mouseenter', () => this.stop());
+        this.addEventListener('mouseleave', () => this.start());
+        this.addEventListener('focusin', () => this.stop());
+        this.addEventListener('focusout', (event) => {
+          if (!this.contains(event.relatedTarget)) this.start();
+        });
+        this.start();
+      }
+      disconnectedCallback() {
+        this.stop();
+      }
+      show(index) {
+        this.current = (index + this.slides.length) % this.slides.length;
+        this.slides.forEach((slide, i) => {
+          const active = i === this.current;
+          slide.classList.toggle('is-active', active);
+          slide.setAttribute('aria-hidden', active ? 'false' : 'true');
+        });
+        this.dots.forEach((dot, i) => dot.setAttribute('aria-current', i === this.current ? 'true' : 'false'));
+        this.restart();
+      }
+      start() {
+        if (this.dataset.autoplay !== 'true' || this.slides.length < 2 || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        if (!this.timer) this.timer = window.setInterval(() => this.show(this.current + 1), Number(this.dataset.speed));
+      }
+      stop() {
+        if (this.timer) window.clearInterval(this.timer);
+        this.timer = null;
+      }
+      restart() {
+        this.stop();
+        this.start();
+      }
+    }
+    customElements.define(tagName, AiSlideshow);
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Auto-rotating slideshow",
+  "settings": [
+    { "type": "header", "content": "Slideshow" },
+    { "type": "range", "id": "desktop_width_percent", "label": "Desktop width", "min": 50, "max": 100, "step": 5, "unit": "%", "default": 100 },
+    { "type": "range", "id": "slide_height", "label": "Slide height", "min": 300, "max": 800, "step": 50, "unit": "px", "default": 550 },
+    { "type": "range", "id": "overlay_opacity", "label": "Image overlay", "min": 0, "max": 80, "step": 5, "unit": "%", "default": 35 },
+    { "type": "select", "id": "content_alignment", "label": "Content alignment", "options": [{ "value": "left", "label": "Left" }, { "value": "center", "label": "Center" }, { "value": "right", "label": "Right" }], "default": "center" },
+    { "type": "checkbox", "id": "autoplay", "label": "Auto-play slides", "default": true },
+    { "type": "range", "id": "autoplay_speed", "label": "Auto-play speed", "min": 3, "max": 12, "step": 1, "unit": "s", "default": 5 },
+    { "type": "header", "content": "Slide 1" },
+    { "type": "image_picker", "id": "slide_1_image", "label": "Background image" },
+    { "type": "text", "id": "slide_1_heading", "label": "Heading", "default": "Freshwater shrimp, thriving" },
+    { "type": "textarea", "id": "slide_1_subheading", "label": "Subheading", "default": "Discover vibrant shrimp and carefully selected aquarium essentials." },
+    { "type": "text", "id": "slide_1_button_label", "label": "Button label", "default": "Shop shrimp" },
+    { "type": "url", "id": "slide_1_button_link", "label": "Button link" },
+    { "type": "header", "content": "Slide 2" },
+    { "type": "image_picker", "id": "slide_2_image", "label": "Background image" },
+    { "type": "text", "id": "slide_2_heading", "label": "Heading", "default": "Build a beautiful planted tank" },
+    { "type": "textarea", "id": "slide_2_subheading", "label": "Subheading", "default": "Find the right additions for a balanced, colorful freshwater aquarium." },
+    { "type": "text", "id": "slide_2_button_label", "label": "Button label", "default": "Explore supplies" },
+    { "type": "url", "id": "slide_2_button_link", "label": "Button link" },
+    { "type": "header", "content": "Slide 3" },
+    { "type": "image_picker", "id": "slide_3_image", "label": "Background image" },
+    { "type": "text", "id": "slide_3_heading", "label": "Heading", "default": "Carefully packed for the journey" },
+    { "type": "textarea", "id": "slide_3_subheading", "label": "Subheading", "default": "Explore our live arrival information and prepare for your new arrivals." },
+    { "type": "text", "id": "slide_3_button_label", "label": "Button label", "default": "Learn more" },
+    { "type": "url", "id": "slide_3_button_link", "label": "Button link" }
+  ],
+  "presets": [{ "name": "Auto-rotating slideshow" }],
+  "tag": null,
+  "class": "auto-rotating-slideshow"
+}
+{% endschema %}

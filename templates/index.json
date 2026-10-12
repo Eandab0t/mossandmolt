@@ -1,0 +1,1335 @@
+{
+    "sections":  {
+                     "hero_jVaWmY":  {
+                                         "type":  "hero",
+                                         "name":  "t:names.hero",
+                                         "settings":  {
+                                                          "media_type_1":  "image",
+                                                          "image_1":  "shopify://shop_images/Gemini_Generated_Image_8znzlt8znzlt8znz.jpg",
+                                                          "media_type_2":  "video",
+                                                          "image_2":  "shopify://shop_images/Moss_Molt_Aquatic_Emblem_3.png",
+                                                          "stack_media_on_mobile":  false,
+                                                          "custom_mobile_media":  false,
+                                                          "media_type_1_mobile":  "image",
+                                                          "image_1_mobile":  "shopify://shop_images/2B2CB392-FF30-4B87-852B-A80BCDEA2C93.gif",
+                                                          "media_type_2_mobile":  "image",
+                                                          "link":  "",
+                                                          "open_in_new_tab":  false,
+                                                          "content_direction":  "column",
+                                                          "vertical_on_mobile":  true,
+                                                          "horizontal_alignment":  "space-between",
+                                                          "vertical_alignment":  "center",
+                                                          "align_baseline":  true,
+                                                          "horizontal_alignment_flex_direction_column":  "center",
+                                                          "vertical_alignment_flex_direction_column":  "center",
+                                                          "gap":  0,
+                                                          "section_width":  "page-width",
+                                                          "section_height":  "auto",
+                                                          "section_height_custom":  73,
+                                                          "background_color":  "rgba(0,0,0,0)",
+                                                          "toggle_overlay":  true,
+                                                          "overlay_color":  "rgba(8,18,15,0.55)",
+                                                          "overlay_style":  "solid",
+                                                          "gradient_direction":  "to bottom",
+                                                          "blurred_reflection":  false,
+                                                          "reflection_opacity":  75,
+                                                          "padding-block-start":  0,
+                                                          "padding-block-end":  0
+                                                      },
+                                         "blocks":  {
+                                                        "hero_eyebrow":  {
+                                                                             "type":  "text",
+                                                                             "name":  "t:names.text",
+                                                                             "settings":  {
+                                                                                              "text":  "\u003cp\u003eUSA-BRED NEOCARIDINA SHRIMP\u003c/p\u003e",
+                                                                                              "width":  "fit-content",
+                                                                                              "max_width":  "narrow",
+                                                                                              "alignment":  "left",
+                                                                                              "type_preset":  "paragraph",
+                                                                                              "font":  "var(--font-subheading--family)",
+                                                                                              "font_size":  "0.8125rem",
+                                                                                              "line_height":  "normal",
+                                                                                              "letter_spacing":  "0.14em",
+                                                                                              "case":  "uppercase",
+                                                                                              "wrap":  "pretty",
+                                                                                              "text_color":  "#7FD4C1",
+                                                                                              "background":  false,
+                                                                                              "background_color":  "#00000026",
+                                                                                              "corner_radius":  0,
+                                                                                              "padding-block-start":  0,
+                                                                                              "padding-block-end":  0,
+                                                                                              "padding-inline-start":  0,
+                                                                                              "padding-inline-end":  0
+                                                                                          },
+                                                                             "blocks":  {
+
+                                                                                        }
+                                                                         },
+                                                        "hero_heading":  {
+                                                                             "type":  "text",
+                                                                             "name":  "t:names.text",
+                                                                             "settings":  {
+                                                                                              "text":  "\u003ch1\u003eOrange-eye \u0026 yellow-eye shrimp, bred for color.\u003c/h1\u003e",
+                                                                                              "width":  "fit-content",
+                                                                                              "max_width":  "narrow",
+                                                                                              "alignment":  "left",
+                                                                                              "type_preset":  "h1",
+                                                                                              "font":  "var(--font-heading--family)",
+                                                                                              "font_size":  "3.5rem",
+                                                                                              "line_height":  "display-tight",
+                                                                                              "letter_spacing":  "normal",
+                                                                                              "case":  "none",
+                                                                                              "wrap":  "pretty",
+                                                                                              "text_color":  "#EDF5EE",
+                                                                                              "background":  false,
+                                                                                              "background_color":  "#00000026",
+                                                                                              "corner_radius":  0,
+                                                                                              "padding-block-start":  0,
+                                                                                              "padding-block-end":  0,
+                                                                                              "padding-inline-start":  0,
+                                                                                              "padding-inline-end":  0
+                                                                                          },
+                                                                             "blocks":  {
+
+                                                                                        }
+                                                                         },
+                                                        "hero_sub":  {
+                                                                         "type":  "text",
+                                                                         "name":  "t:names.text",
+                                                                         "settings":  {
+                                                                                          "text":  "\u003cp\u003eSpecialist Neocaridina lines, plus aquatic plants, snails and equipment for your nano tank.\u003c/p\u003e",
+                                                                                          "width":  "fit-content",
+                                                                                          "max_width":  "narrow",
+                                                                                          "alignment":  "left",
+                                                                                          "type_preset":  "paragraph",
+                                                                                          "font":  "var(--font-body--family)",
+                                                                                          "font_size":  "1.125rem",
+                                                                                          "line_height":  "normal",
+                                                                                          "letter_spacing":  "normal",
+                                                                                          "case":  "none",
+                                                                                          "wrap":  "pretty",
+                                                                                          "text_color":  "#EDF5EE",
+                                                                                          "background":  false,
+                                                                                          "background_color":  "#00000026",
+                                                                                          "corner_radius":  0,
+                                                                                          "padding-block-start":  0,
+                                                                                          "padding-block-end":  0,
+                                                                                          "padding-inline-start":  0,
+                                                                                          "padding-inline-end":  0
+                                                                                      },
+                                                                         "blocks":  {
+
+                                                                                    }
+                                                                     },
+                                                        "hero_ctas":  {
+                                                                          "type":  "group",
+                                                                          "name":  "t:names.group",
+                                                                          "settings":  {
+                                                                                           "content_direction":  "row",
+                                                                                           "vertical_on_mobile":  true,
+                                                                                           "horizontal_alignment":  "flex-start",
+                                                                                           "vertical_alignment":  "center",
+                                                                                           "align_baseline":  false,
+                                                                                           "horizontal_alignment_flex_direction_column":  "flex-start",
+                                                                                           "vertical_alignment_flex_direction_column":  "center",
+                                                                                           "gap":  12,
+                                                                                           "width":  "fit-content",
+                                                                                           "custom_width":  100,
+                                                                                           "width_mobile":  "fill",
+                                                                                           "custom_width_mobile":  100,
+                                                                                           "height":  "fit",
+                                                                                           "custom_height":  100,
+                                                                                           "background_media":  "none",
+                                                                                           "background_color":  "",
+                                                                                           "video_position":  "cover",
+                                                                                           "background_image_position":  "cover",
+                                                                                           "toggle_overlay":  false,
+                                                                                           "overlay_color":  "#00000026",
+                                                                                           "overlay_style":  "solid",
+                                                                                           "gradient_direction":  "to top",
+                                                                                           "border":  "none",
+                                                                                           "border_width":  1,
+                                                                                           "border_opacity":  100,
+                                                                                           "border_color":  "",
+                                                                                           "border_radius":  0,
+                                                                                           "link":  "",
+                                                                                           "open_in_new_tab":  false,
+                                                                                           "placeholder":  "",
+                                                                                           "padding-block-start":  0,
+                                                                                           "padding-block-end":  12,
+                                                                                           "padding-inline-start":  0,
+                                                                                           "padding-inline-end":  0
+                                                                                       },
+                                                                          "blocks":  {
+                                                                                         "hero_cta_shop":  {
+                                                                                                               "type":  "button",
+                                                                                                               "name":  "t:names.button",
+                                                                                                               "settings":  {
+                                                                                                                                "label":  "Shop shrimp",
+                                                                                                                                "link":  "/collections/neocaridina-shrimp",
+                                                                                                                                "open_in_new_tab":  false,
+                                                                                                                                "style_class":  "button",
+                                                                                                                                "custom_button_background":  "#EDF5EE",
+                                                                                                                                "custom_button_text":  "#08120F",
+                                                                                                                                "custom_button_border":  "#EDF5EE",
+                                                                                                                                "link_text_color":  "",
+                                                                                                                                "width":  "fit-content",
+                                                                                                                                "custom_width":  100,
+                                                                                                                                "width_mobile":  "fit-content",
+                                                                                                                                "custom_width_mobile":  100
+                                                                                                                            },
+                                                                                                               "blocks":  {
+
+                                                                                                                          }
+                                                                                                           },
+                                                                                         "hero_cta_browse":  {
+                                                                                                                 "type":  "button",
+                                                                                                                 "name":  "t:names.button",
+                                                                                                                 "settings":  {
+                                                                                                                                  "label":  "Browse collections",
+                                                                                                                                  "link":  "/collections",
+                                                                                                                                  "open_in_new_tab":  false,
+                                                                                                                                  "style_class":  "button-secondary",
+                                                                                                                                  "custom_button_background":  "rgba(0,0,0,0)",
+                                                                                                                                  "custom_button_text":  "#EDF5EE",
+                                                                                                                                  "custom_button_border":  "#EDF5EE",
+                                                                                                                                  "link_text_color":  "",
+                                                                                                                                  "width":  "fit-content",
+                                                                                                                                  "custom_width":  100,
+                                                                                                                                  "width_mobile":  "fit-content",
+                                                                                                                                  "custom_width_mobile":  100
+                                                                                                                              },
+                                                                                                                 "blocks":  {
+
+                                                                                                                            }
+                                                                                                             }
+                                                                                     },
+                                                                          "block_order":  [
+                                                                                              "hero_cta_shop",
+                                                                                              "hero_cta_browse"
+                                                                                          ]
+                                                                      }
+                                                    },
+                                         "block_order":  [
+                                                             "hero_eyebrow",
+                                                             "hero_heading",
+                                                             "hero_sub",
+                                                             "hero_ctas"
+                                                         ]
+                                     },
+                     "section_LUm4EG":  {
+                                            "type":  "section",
+                                            "blocks":  {
+                                                           "group_8XGTUN":  {
+                                                                                "type":  "group",
+                                                                                "settings":  {
+                                                                                                 "content_direction":  "column",
+                                                                                                 "vertical_on_mobile":  true,
+                                                                                                 "horizontal_alignment":  "flex-start",
+                                                                                                 "vertical_alignment":  "center",
+                                                                                                 "align_baseline":  false,
+                                                                                                 "horizontal_alignment_flex_direction_column":  "center",
+                                                                                                 "vertical_alignment_flex_direction_column":  "center",
+                                                                                                 "gap":  16,
+                                                                                                 "width":  "fill",
+                                                                                                 "custom_width":  100,
+                                                                                                 "width_mobile":  "fill",
+                                                                                                 "custom_width_mobile":  100,
+                                                                                                 "height":  "fit",
+                                                                                                 "custom_height":  100,
+                                                                                                 "background_media":  "none",
+                                                                                                 "background_color":  "",
+                                                                                                 "video_position":  "cover",
+                                                                                                 "background_image_position":  "cover",
+                                                                                                 "toggle_overlay":  false,
+                                                                                                 "overlay_color":  "#00000026",
+                                                                                                 "overlay_style":  "solid",
+                                                                                                 "gradient_direction":  "to top",
+                                                                                                 "border":  "none",
+                                                                                                 "border_width":  1,
+                                                                                                 "border_opacity":  100,
+                                                                                                 "border_color":  "",
+                                                                                                 "border_radius":  0,
+                                                                                                 "link":  "",
+                                                                                                 "open_in_new_tab":  false,
+                                                                                                 "placeholder":  "",
+                                                                                                 "padding-block-start":  0,
+                                                                                                 "padding-block-end":  0,
+                                                                                                 "padding-inline-start":  0,
+                                                                                                 "padding-inline-end":  0
+                                                                                             },
+                                                                                "blocks":  {
+                                                                                               "icon_Lndwp6":  {
+                                                                                                                   "type":  "icon",
+                                                                                                                   "settings":  {
+                                                                                                                                    "icon":  "truck",
+                                                                                                                                    "width":  36,
+                                                                                                                                    "link":  "",
+                                                                                                                                    "open_in_new_tab":  false,
+                                                                                                                                    "icon_color":  ""
+                                                                                                                                },
+                                                                                                                   "blocks":  {
+
+                                                                                                                              }
+                                                                                                               },
+                                                                                               "group_bX9iTt":  {
+                                                                                                                    "type":  "group",
+                                                                                                                    "settings":  {
+                                                                                                                                     "content_direction":  "column",
+                                                                                                                                     "vertical_on_mobile":  true,
+                                                                                                                                     "horizontal_alignment":  "flex-start",
+                                                                                                                                     "vertical_alignment":  "center",
+                                                                                                                                     "align_baseline":  false,
+                                                                                                                                     "horizontal_alignment_flex_direction_column":  "flex-start",
+                                                                                                                                     "vertical_alignment_flex_direction_column":  "center",
+                                                                                                                                     "gap":  4,
+                                                                                                                                     "width":  "fill",
+                                                                                                                                     "custom_width":  100,
+                                                                                                                                     "width_mobile":  "fill",
+                                                                                                                                     "custom_width_mobile":  100,
+                                                                                                                                     "height":  "fit",
+                                                                                                                                     "custom_height":  100,
+                                                                                                                                     "background_media":  "none",
+                                                                                                                                     "background_color":  "",
+                                                                                                                                     "video_position":  "cover",
+                                                                                                                                     "background_image_position":  "cover",
+                                                                                                                                     "toggle_overlay":  false,
+                                                                                                                                     "overlay_color":  "#00000026",
+                                                                                                                                     "overlay_style":  "solid",
+                                                                                                                                     "gradient_direction":  "to top",
+                                                                                                                                     "border":  "none",
+                                                                                                                                     "border_width":  1,
+                                                                                                                                     "border_opacity":  100,
+                                                                                                                                     "border_color":  "",
+                                                                                                                                     "border_radius":  0,
+                                                                                                                                     "link":  "",
+                                                                                                                                     "open_in_new_tab":  false,
+                                                                                                                                     "placeholder":  "",
+                                                                                                                                     "padding-block-start":  0,
+                                                                                                                                     "padding-block-end":  0,
+                                                                                                                                     "padding-inline-start":  0,
+                                                                                                                                     "padding-inline-end":  0
+                                                                                                                                 },
+                                                                                                                    "blocks":  {
+                                                                                                                                   "text_PkqVgR":  {
+                                                                                                                                                       "type":  "text",
+                                                                                                                                                       "settings":  {
+                                                                                                                                                                        "text":  "\u003ch2\u003eQuick and Safe Shipping throughout the U.S.A\u003c/h2\u003e",
+                                                                                                                                                                        "width":  "100%",
+                                                                                                                                                                        "max_width":  "normal",
+                                                                                                                                                                        "alignment":  "center",
+                                                                                                                                                                        "type_preset":  "h5",
+                                                                                                                                                                        "font":  "var(--font-body--family)",
+                                                                                                                                                                        "font_size":  "",
+                                                                                                                                                                        "line_height":  "normal",
+                                                                                                                                                                        "letter_spacing":  "normal",
+                                                                                                                                                                        "case":  "none",
+                                                                                                                                                                        "wrap":  "pretty",
+                                                                                                                                                                        "text_color":  "",
+                                                                                                                                                                        "background":  false,
+                                                                                                                                                                        "background_color":  "#00000026",
+                                                                                                                                                                        "corner_radius":  0,
+                                                                                                                                                                        "padding-block-start":  0,
+                                                                                                                                                                        "padding-block-end":  0,
+                                                                                                                                                                        "padding-inline-start":  0,
+                                                                                                                                                                        "padding-inline-end":  0
+                                                                                                                                                                    },
+                                                                                                                                                       "blocks":  {
+
+                                                                                                                                                                  }
+                                                                                                                                                   },
+                                                                                                                                   "text_C7r99z":  {
+                                                                                                                                                       "type":  "text",
+                                                                                                                                                       "name":  "t:names.text",
+                                                                                                                                                       "settings":  {
+                                                                                                                                                                        "text":  "",
+                                                                                                                                                                        "width":  "100%",
+                                                                                                                                                                        "max_width":  "narrow",
+                                                                                                                                                                        "alignment":  "center",
+                                                                                                                                                                        "type_preset":  "paragraph",
+                                                                                                                                                                        "font":  "var(--font-body--family)",
+                                                                                                                                                                        "font_size":  "1rem",
+                                                                                                                                                                        "line_height":  "normal",
+                                                                                                                                                                        "letter_spacing":  "normal",
+                                                                                                                                                                        "case":  "none",
+                                                                                                                                                                        "wrap":  "pretty",
+                                                                                                                                                                        "text_color":  "",
+                                                                                                                                                                        "background":  false,
+                                                                                                                                                                        "background_color":  "#00000026",
+                                                                                                                                                                        "corner_radius":  0,
+                                                                                                                                                                        "padding-block-start":  0,
+                                                                                                                                                                        "padding-block-end":  0,
+                                                                                                                                                                        "padding-inline-start":  0,
+                                                                                                                                                                        "padding-inline-end":  0
+                                                                                                                                                                    },
+                                                                                                                                                       "blocks":  {
+
+                                                                                                                                                                  }
+                                                                                                                                                   },
+                                                                                                                                   "text_pjdHPC":  {
+                                                                                                                                                       "type":  "text",
+                                                                                                                                                       "settings":  {
+                                                                                                                                                                        "text":  "",
+                                                                                                                                                                        "width":  "100%",
+                                                                                                                                                                        "max_width":  "normal",
+                                                                                                                                                                        "alignment":  "center",
+                                                                                                                                                                        "type_preset":  "rte",
+                                                                                                                                                                        "font":  "var(--font-body--family)",
+                                                                                                                                                                        "font_size":  "",
+                                                                                                                                                                        "line_height":  "normal",
+                                                                                                                                                                        "letter_spacing":  "normal",
+                                                                                                                                                                        "case":  "none",
+                                                                                                                                                                        "wrap":  "pretty",
+                                                                                                                                                                        "text_color":  "",
+                                                                                                                                                                        "background":  false,
+                                                                                                                                                                        "background_color":  "#00000026",
+                                                                                                                                                                        "corner_radius":  0,
+                                                                                                                                                                        "padding-block-start":  0,
+                                                                                                                                                                        "padding-block-end":  0,
+                                                                                                                                                                        "padding-inline-start":  0,
+                                                                                                                                                                        "padding-inline-end":  0
+                                                                                                                                                                    },
+                                                                                                                                                       "blocks":  {
+
+                                                                                                                                                                  }
+                                                                                                                                                   }
+                                                                                                                               },
+                                                                                                                    "block_order":  [
+                                                                                                                                        "text_PkqVgR",
+                                                                                                                                        "text_C7r99z",
+                                                                                                                                        "text_pjdHPC"
+                                                                                                                                    ]
+                                                                                                                }
+                                                                                           },
+                                                                                "block_order":  [
+                                                                                                    "icon_Lndwp6",
+                                                                                                    "group_bX9iTt"
+                                                                                                ]
+                                                                            },
+                                                           "group_4YH74t":  {
+                                                                                "type":  "group",
+                                                                                "settings":  {
+                                                                                                 "content_direction":  "column",
+                                                                                                 "vertical_on_mobile":  true,
+                                                                                                 "horizontal_alignment":  "flex-start",
+                                                                                                 "vertical_alignment":  "center",
+                                                                                                 "align_baseline":  false,
+                                                                                                 "horizontal_alignment_flex_direction_column":  "center",
+                                                                                                 "vertical_alignment_flex_direction_column":  "center",
+                                                                                                 "gap":  16,
+                                                                                                 "width":  "fill",
+                                                                                                 "custom_width":  100,
+                                                                                                 "width_mobile":  "fill",
+                                                                                                 "custom_width_mobile":  100,
+                                                                                                 "height":  "fit",
+                                                                                                 "custom_height":  100,
+                                                                                                 "background_media":  "none",
+                                                                                                 "background_color":  "",
+                                                                                                 "video_position":  "cover",
+                                                                                                 "background_image_position":  "cover",
+                                                                                                 "toggle_overlay":  false,
+                                                                                                 "overlay_color":  "#00000026",
+                                                                                                 "overlay_style":  "solid",
+                                                                                                 "gradient_direction":  "to top",
+                                                                                                 "border":  "none",
+                                                                                                 "border_width":  1,
+                                                                                                 "border_opacity":  100,
+                                                                                                 "border_color":  "",
+                                                                                                 "border_radius":  0,
+                                                                                                 "link":  "",
+                                                                                                 "open_in_new_tab":  false,
+                                                                                                 "placeholder":  "",
+                                                                                                 "padding-block-start":  0,
+                                                                                                 "padding-block-end":  0,
+                                                                                                 "padding-inline-start":  0,
+                                                                                                 "padding-inline-end":  0
+                                                                                             },
+                                                                                "blocks":  {
+                                                                                               "icon_i3zQmc":  {
+                                                                                                                   "type":  "icon",
+                                                                                                                   "settings":  {
+                                                                                                                                    "icon":  "heart",
+                                                                                                                                    "width":  36,
+                                                                                                                                    "link":  "",
+                                                                                                                                    "open_in_new_tab":  false,
+                                                                                                                                    "icon_color":  ""
+                                                                                                                                },
+                                                                                                                   "blocks":  {
+
+                                                                                                                              }
+                                                                                                               },
+                                                                                               "group_wrLcAY":  {
+                                                                                                                    "type":  "group",
+                                                                                                                    "settings":  {
+                                                                                                                                     "content_direction":  "column",
+                                                                                                                                     "vertical_on_mobile":  true,
+                                                                                                                                     "horizontal_alignment":  "flex-start",
+                                                                                                                                     "vertical_alignment":  "center",
+                                                                                                                                     "align_baseline":  false,
+                                                                                                                                     "horizontal_alignment_flex_direction_column":  "flex-start",
+                                                                                                                                     "vertical_alignment_flex_direction_column":  "center",
+                                                                                                                                     "gap":  4,
+                                                                                                                                     "width":  "fill",
+                                                                                                                                     "custom_width":  100,
+                                                                                                                                     "width_mobile":  "fill",
+                                                                                                                                     "custom_width_mobile":  100,
+                                                                                                                                     "height":  "fit",
+                                                                                                                                     "custom_height":  100,
+                                                                                                                                     "background_media":  "none",
+                                                                                                                                     "background_color":  "",
+                                                                                                                                     "video_position":  "cover",
+                                                                                                                                     "background_image_position":  "cover",
+                                                                                                                                     "toggle_overlay":  false,
+                                                                                                                                     "overlay_color":  "#00000026",
+                                                                                                                                     "overlay_style":  "solid",
+                                                                                                                                     "gradient_direction":  "to top",
+                                                                                                                                     "border":  "none",
+                                                                                                                                     "border_width":  1,
+                                                                                                                                     "border_opacity":  100,
+                                                                                                                                     "border_color":  "",
+                                                                                                                                     "border_radius":  0,
+                                                                                                                                     "link":  "",
+                                                                                                                                     "open_in_new_tab":  false,
+                                                                                                                                     "placeholder":  "",
+                                                                                                                                     "padding-block-start":  0,
+                                                                                                                                     "padding-block-end":  0,
+                                                                                                                                     "padding-inline-start":  0,
+                                                                                                                                     "padding-inline-end":  0
+                                                                                                                                 },
+                                                                                                                    "blocks":  {
+                                                                                                                                   "text_H7xkxB":  {
+                                                                                                                                                       "type":  "text",
+                                                                                                                                                       "settings":  {
+                                                                                                                                                                        "text":  "\u003ch2\u003eDOA Live Arrival Guarantee with Replacement or Refund\u003c/h2\u003e",
+                                                                                                                                                                        "width":  "100%",
+                                                                                                                                                                        "max_width":  "normal",
+                                                                                                                                                                        "alignment":  "center",
+                                                                                                                                                                        "type_preset":  "h5",
+                                                                                                                                                                        "font":  "var(--font-body--family)",
+                                                                                                                                                                        "font_size":  "",
+                                                                                                                                                                        "line_height":  "normal",
+                                                                                                                                                                        "letter_spacing":  "normal",
+                                                                                                                                                                        "case":  "none",
+                                                                                                                                                                        "wrap":  "pretty",
+                                                                                                                                                                        "text_color":  "",
+                                                                                                                                                                        "background":  false,
+                                                                                                                                                                        "background_color":  "#00000026",
+                                                                                                                                                                        "corner_radius":  0,
+                                                                                                                                                                        "padding-block-start":  0,
+                                                                                                                                                                        "padding-block-end":  0,
+                                                                                                                                                                        "padding-inline-start":  0,
+                                                                                                                                                                        "padding-inline-end":  0
+                                                                                                                                                                    },
+                                                                                                                                                       "blocks":  {
+
+                                                                                                                                                                  }
+                                                                                                                                                   },
+                                                                                                                                   "text_fqqQbD":  {
+                                                                                                                                                       "type":  "text",
+                                                                                                                                                       "settings":  {
+                                                                                                                                                                        "text":  "",
+                                                                                                                                                                        "width":  "100%",
+                                                                                                                                                                        "max_width":  "normal",
+                                                                                                                                                                        "alignment":  "center",
+                                                                                                                                                                        "type_preset":  "rte",
+                                                                                                                                                                        "font":  "var(--font-body--family)",
+                                                                                                                                                                        "font_size":  "",
+                                                                                                                                                                        "line_height":  "normal",
+                                                                                                                                                                        "letter_spacing":  "normal",
+                                                                                                                                                                        "case":  "none",
+                                                                                                                                                                        "wrap":  "pretty",
+                                                                                                                                                                        "text_color":  "",
+                                                                                                                                                                        "background":  false,
+                                                                                                                                                                        "background_color":  "#00000026",
+                                                                                                                                                                        "corner_radius":  0,
+                                                                                                                                                                        "padding-block-start":  0,
+                                                                                                                                                                        "padding-block-end":  0,
+                                                                                                                                                                        "padding-inline-start":  0,
+                                                                                                                                                                        "padding-inline-end":  0
+                                                                                                                                                                    },
+                                                                                                                                                       "blocks":  {
+
+                                                                                                                                                                  }
+                                                                                                                                                   }
+                                                                                                                               },
+                                                                                                                    "block_order":  [
+                                                                                                                                        "text_H7xkxB",
+                                                                                                                                        "text_fqqQbD"
+                                                                                                                                    ]
+                                                                                                                }
+                                                                                           },
+                                                                                "block_order":  [
+                                                                                                    "icon_i3zQmc",
+                                                                                                    "group_wrLcAY"
+                                                                                                ]
+                                                                            },
+                                                           "group_pR9Xpr":  {
+                                                                                "type":  "group",
+                                                                                "settings":  {
+                                                                                                 "content_direction":  "column",
+                                                                                                 "vertical_on_mobile":  true,
+                                                                                                 "horizontal_alignment":  "flex-start",
+                                                                                                 "vertical_alignment":  "center",
+                                                                                                 "align_baseline":  false,
+                                                                                                 "horizontal_alignment_flex_direction_column":  "center",
+                                                                                                 "vertical_alignment_flex_direction_column":  "center",
+                                                                                                 "gap":  16,
+                                                                                                 "width":  "fill",
+                                                                                                 "custom_width":  100,
+                                                                                                 "width_mobile":  "fill",
+                                                                                                 "custom_width_mobile":  100,
+                                                                                                 "height":  "fit",
+                                                                                                 "custom_height":  100,
+                                                                                                 "background_media":  "none",
+                                                                                                 "background_color":  "",
+                                                                                                 "video_position":  "cover",
+                                                                                                 "background_image_position":  "cover",
+                                                                                                 "toggle_overlay":  false,
+                                                                                                 "overlay_color":  "#00000026",
+                                                                                                 "overlay_style":  "solid",
+                                                                                                 "gradient_direction":  "to top",
+                                                                                                 "border":  "none",
+                                                                                                 "border_width":  1,
+                                                                                                 "border_opacity":  100,
+                                                                                                 "border_color":  "",
+                                                                                                 "border_radius":  0,
+                                                                                                 "link":  "",
+                                                                                                 "open_in_new_tab":  false,
+                                                                                                 "placeholder":  "",
+                                                                                                 "padding-block-start":  0,
+                                                                                                 "padding-block-end":  0,
+                                                                                                 "padding-inline-start":  0,
+                                                                                                 "padding-inline-end":  0
+                                                                                             },
+                                                                                "blocks":  {
+                                                                                               "icon_YkdmFe":  {
+                                                                                                                   "type":  "icon",
+                                                                                                                   "settings":  {
+                                                                                                                                    "icon":  "chat_bubble",
+                                                                                                                                    "width":  36,
+                                                                                                                                    "link":  "",
+                                                                                                                                    "open_in_new_tab":  false,
+                                                                                                                                    "icon_color":  ""
+                                                                                                                                },
+                                                                                                                   "blocks":  {
+
+                                                                                                                              }
+                                                                                                               },
+                                                                                               "group_FjRh3z":  {
+                                                                                                                    "type":  "group",
+                                                                                                                    "settings":  {
+                                                                                                                                     "content_direction":  "column",
+                                                                                                                                     "vertical_on_mobile":  true,
+                                                                                                                                     "horizontal_alignment":  "flex-start",
+                                                                                                                                     "vertical_alignment":  "center",
+                                                                                                                                     "align_baseline":  false,
+                                                                                                                                     "horizontal_alignment_flex_direction_column":  "flex-start",
+                                                                                                                                     "vertical_alignment_flex_direction_column":  "center",
+                                                                                                                                     "gap":  4,
+                                                                                                                                     "width":  "fill",
+                                                                                                                                     "custom_width":  100,
+                                                                                                                                     "width_mobile":  "fill",
+                                                                                                                                     "custom_width_mobile":  100,
+                                                                                                                                     "height":  "fit",
+                                                                                                                                     "custom_height":  100,
+                                                                                                                                     "background_media":  "none",
+                                                                                                                                     "background_color":  "",
+                                                                                                                                     "video_position":  "cover",
+                                                                                                                                     "background_image_position":  "cover",
+                                                                                                                                     "toggle_overlay":  false,
+                                                                                                                                     "overlay_color":  "#00000026",
+                                                                                                                                     "overlay_style":  "solid",
+                                                                                                                                     "gradient_direction":  "to top",
+                                                                                                                                     "border":  "none",
+                                                                                                                                     "border_width":  1,
+                                                                                                                                     "border_opacity":  100,
+                                                                                                                                     "border_color":  "",
+                                                                                                                                     "border_radius":  0,
+                                                                                                                                     "link":  "",
+                                                                                                                                     "open_in_new_tab":  false,
+                                                                                                                                     "placeholder":  "",
+                                                                                                                                     "padding-block-start":  0,
+                                                                                                                                     "padding-block-end":  0,
+                                                                                                                                     "padding-inline-start":  0,
+                                                                                                                                     "padding-inline-end":  0
+                                                                                                                                 },
+                                                                                                                    "blocks":  {
+                                                                                                                                   "text_tRExCj":  {
+                                                                                                                                                       "type":  "text",
+                                                                                                                                                       "settings":  {
+                                                                                                                                                                        "text":  "\u003ch2\u003eDedicated and enthusiastic customer service\u003c/h2\u003e",
+                                                                                                                                                                        "width":  "100%",
+                                                                                                                                                                        "max_width":  "normal",
+                                                                                                                                                                        "alignment":  "center",
+                                                                                                                                                                        "type_preset":  "h5",
+                                                                                                                                                                        "font":  "var(--font-body--family)",
+                                                                                                                                                                        "font_size":  "",
+                                                                                                                                                                        "line_height":  "normal",
+                                                                                                                                                                        "letter_spacing":  "normal",
+                                                                                                                                                                        "case":  "none",
+                                                                                                                                                                        "wrap":  "pretty",
+                                                                                                                                                                        "text_color":  "",
+                                                                                                                                                                        "background":  false,
+                                                                                                                                                                        "background_color":  "#00000026",
+                                                                                                                                                                        "corner_radius":  0,
+                                                                                                                                                                        "padding-block-start":  0,
+                                                                                                                                                                        "padding-block-end":  0,
+                                                                                                                                                                        "padding-inline-start":  0,
+                                                                                                                                                                        "padding-inline-end":  0
+                                                                                                                                                                    },
+                                                                                                                                                       "blocks":  {
+
+                                                                                                                                                                  }
+                                                                                                                                                   },
+                                                                                                                                   "text_XmWthN":  {
+                                                                                                                                                       "type":  "text",
+                                                                                                                                                       "settings":  {
+                                                                                                                                                                        "text":  "",
+                                                                                                                                                                        "width":  "100%",
+                                                                                                                                                                        "max_width":  "normal",
+                                                                                                                                                                        "alignment":  "center",
+                                                                                                                                                                        "type_preset":  "rte",
+                                                                                                                                                                        "font":  "var(--font-body--family)",
+                                                                                                                                                                        "font_size":  "",
+                                                                                                                                                                        "line_height":  "normal",
+                                                                                                                                                                        "letter_spacing":  "normal",
+                                                                                                                                                                        "case":  "none",
+                                                                                                                                                                        "wrap":  "pretty",
+                                                                                                                                                                        "text_color":  "",
+                                                                                                                                                                        "background":  false,
+                                                                                                                                                                        "background_color":  "#00000026",
+                                                                                                                                                                        "corner_radius":  0,
+                                                                                                                                                                        "padding-block-start":  0,
+                                                                                                                                                                        "padding-block-end":  0,
+                                                                                                                                                                        "padding-inline-start":  0,
+                                                                                                                                                                        "padding-inline-end":  0
+                                                                                                                                                                    },
+                                                                                                                                                       "blocks":  {
+
+                                                                                                                                                                  }
+                                                                                                                                                   }
+                                                                                                                               },
+                                                                                                                    "block_order":  [
+                                                                                                                                        "text_tRExCj",
+                                                                                                                                        "text_XmWthN"
+                                                                                                                                    ]
+                                                                                                                }
+                                                                                           },
+                                                                                "block_order":  [
+                                                                                                    "icon_YkdmFe",
+                                                                                                    "group_FjRh3z"
+                                                                                                ]
+                                                                            }
+                                                       },
+                                            "block_order":  [
+                                                                "group_8XGTUN",
+                                                                "group_4YH74t",
+                                                                "group_pR9Xpr"
+                                                            ],
+                                            "disabled":  true,
+                                            "name":  "t:names.icons_with_text",
+                                            "settings":  {
+                                                             "content_direction":  "row",
+                                                             "vertical_on_mobile":  false,
+                                                             "horizontal_alignment":  "space-between",
+                                                             "vertical_alignment":  "center",
+                                                             "align_baseline":  false,
+                                                             "horizontal_alignment_flex_direction_column":  "flex-start",
+                                                             "vertical_alignment_flex_direction_column":  "center",
+                                                             "gap":  0,
+                                                             "section_width":  "page-width",
+                                                             "section_height":  "",
+                                                             "section_height_custom":  50,
+                                                             "background_media":  "none",
+                                                             "background_color":  "{{ settings.color_palette.foreground }}",
+                                                             "video_position":  "cover",
+                                                             "background_image_position":  "cover",
+                                                             "toggle_overlay":  false,
+                                                             "overlay_color":  "#00000026",
+                                                             "overlay_style":  "solid",
+                                                             "gradient_direction":  "to top",
+                                                             "border":  "none",
+                                                             "border_width":  1,
+                                                             "border_opacity":  100,
+                                                             "border_color":  "",
+                                                             "border_radius":  0,
+                                                             "padding-block-start":  5,
+                                                             "padding-block-end":  6
+                                                         }
+                                        },
+                     "divider_i6Tqew":  {
+                                            "type":  "divider",
+                                            "disabled":  true,
+                                            "name":  "t:names.divider_section",
+                                            "settings":  {
+                                                             "background_color":  "#ffe9e0",
+                                                             "divider_color":  "#ffe9e0",
+                                                             "section_width":  "full-width",
+                                                             "thickness":  1,
+                                                             "corner_radius":  "square",
+                                                             "width_percent":  100,
+                                                             "alignment_horizontal":  "center",
+                                                             "padding-block-start":  16,
+                                                             "padding-block-end":  16
+                                                         }
+                                        },
+                     "product_list_fa6P9H":  {
+                                                 "type":  "product-list",
+                                                 "blocks":  {
+                                                                "static-header":  {
+                                                                                      "type":  "_product-list-content",
+                                                                                      "name":  "t:names.header",
+                                                                                      "static":  true,
+                                                                                      "settings":  {
+                                                                                                       "content_direction":  "row",
+                                                                                                       "vertical_on_mobile":  false,
+                                                                                                       "horizontal_alignment":  "space-between",
+                                                                                                       "vertical_alignment":  "flex-end",
+                                                                                                       "align_baseline":  true,
+                                                                                                       "horizontal_alignment_flex_direction_column":  "flex-start",
+                                                                                                       "vertical_alignment_flex_direction_column":  "center",
+                                                                                                       "gap":  12,
+                                                                                                       "width":  "fill",
+                                                                                                       "custom_width":  100,
+                                                                                                       "width_mobile":  "fill",
+                                                                                                       "custom_width_mobile":  100,
+                                                                                                       "height":  "fit",
+                                                                                                       "custom_height":  100,
+                                                                                                       "background_media":  "none",
+                                                                                                       "background_color":  "",
+                                                                                                       "video_position":  "cover",
+                                                                                                       "background_image_position":  "cover",
+                                                                                                       "border":  "none",
+                                                                                                       "border_width":  1,
+                                                                                                       "border_opacity":  100,
+                                                                                                       "border_color":  "",
+                                                                                                       "border_radius":  0,
+                                                                                                       "padding-block-start":  0,
+                                                                                                       "padding-block-end":  0,
+                                                                                                       "padding-inline-start":  0,
+                                                                                                       "padding-inline-end":  0
+                                                                                                   },
+                                                                                      "blocks":  {
+                                                                                                     "product_list_text_YFtzcL":  {
+                                                                                                                                      "type":  "_product-list-text",
+                                                                                                                                      "name":  "t:names.collection_title",
+                                                                                                                                      "settings":  {
+                                                                                                                                                       "text":  "\u003ch3\u003eOrange Eye \u0026 Yellow Eye Neos\u003c/h3\u003e",
+                                                                                                                                                       "width":  "fit-content",
+                                                                                                                                                       "max_width":  "normal",
+                                                                                                                                                       "alignment":  "left",
+                                                                                                                                                       "type_preset":  "h3",
+                                                                                                                                                       "font":  "var(--font-heading--family)",
+                                                                                                                                                       "font_size":  "1rem",
+                                                                                                                                                       "line_height":  "normal",
+                                                                                                                                                       "letter_spacing":  "normal",
+                                                                                                                                                       "case":  "none",
+                                                                                                                                                       "wrap":  "pretty",
+                                                                                                                                                       "text_color":  "",
+                                                                                                                                                       "background":  false,
+                                                                                                                                                       "background_color":  "#00000026",
+                                                                                                                                                       "corner_radius":  0,
+                                                                                                                                                       "padding-block-start":  0,
+                                                                                                                                                       "padding-block-end":  0,
+                                                                                                                                                       "padding-inline-start":  0,
+                                                                                                                                                       "padding-inline-end":  0
+                                                                                                                                                   },
+                                                                                                                                      "blocks":  {
+
+                                                                                                                                                 }
+                                                                                                                                  },
+                                                                                                     "product_list_button_MWeP9V":  {
+                                                                                                                                        "type":  "_product-list-button",
+                                                                                                                                        "name":  "t:names.product_list_button",
+                                                                                                                                        "settings":  {
+                                                                                                                                                         "label":  "View all",
+                                                                                                                                                         "open_in_new_tab":  false,
+                                                                                                                                                         "style_class":  "link",
+                                                                                                                                                         "custom_button_background":  "{{ settings.color_palette.foreground }}",
+                                                                                                                                                         "custom_button_text":  "{{ settings.color_palette.background }}",
+                                                                                                                                                         "custom_button_border":  "{{ settings.color_palette.background }}",
+                                                                                                                                                         "link_text_color":  "",
+                                                                                                                                                         "width":  "fit-content",
+                                                                                                                                                         "custom_width":  100,
+                                                                                                                                                         "width_mobile":  "fit-content",
+                                                                                                                                                         "custom_width_mobile":  100
+                                                                                                                                                     },
+                                                                                                                                        "blocks":  {
+
+                                                                                                                                                   }
+                                                                                                                                    }
+                                                                                                 },
+                                                                                      "block_order":  [
+                                                                                                          "product_list_text_YFtzcL",
+                                                                                                          "product_list_button_MWeP9V"
+                                                                                                      ]
+                                                                                  },
+                                                                "static-product-card":  {
+                                                                                            "type":  "_product-card",
+                                                                                            "name":  "t:names.product_card",
+                                                                                            "static":  true,
+                                                                                            "settings":  {
+                                                                                                             "product_card_gap":  4,
+                                                                                                             "background_color":  "",
+                                                                                                             "border":  "none",
+                                                                                                             "border_width":  1,
+                                                                                                             "border_opacity":  100,
+                                                                                                             "border_color":  "",
+                                                                                                             "border_radius":  0,
+                                                                                                             "padding-block-start":  0,
+                                                                                                             "padding-block-end":  0,
+                                                                                                             "padding-inline-start":  0,
+                                                                                                             "padding-inline-end":  0
+                                                                                                         },
+                                                                                            "blocks":  {
+                                                                                                           "product_card_gallery_677WP3":  {
+                                                                                                                                               "type":  "_product-card-gallery",
+                                                                                                                                               "name":  "t:names.product_card_media",
+                                                                                                                                               "settings":  {
+                                                                                                                                                                "image_ratio":  "square",
+                                                                                                                                                                "border":  "solid",
+                                                                                                                                                                "border_width":  1,
+                                                                                                                                                                "border_opacity":  100,
+                                                                                                                                                                "border_color":  "#1E6B3A",
+                                                                                                                                                                "border_radius":  0,
+                                                                                                                                                                "padding-block-start":  0,
+                                                                                                                                                                "padding-block-end":  0,
+                                                                                                                                                                "padding-inline-start":  0,
+                                                                                                                                                                "padding-inline-end":  0
+                                                                                                                                                            },
+                                                                                                                                               "blocks":  {
+
+                                                                                                                                                          }
+                                                                                                                                           },
+                                                                                                           "product_title_YXxMTj":  {
+                                                                                                                                        "type":  "product-title",
+                                                                                                                                        "name":  "t:names.product_title",
+                                                                                                                                        "settings":  {
+                                                                                                                                                         "width":  "100%",
+                                                                                                                                                         "max_width":  "narrow",
+                                                                                                                                                         "alignment":  "left",
+                                                                                                                                                         "type_preset":  "custom",
+                                                                                                                                                         "font":  "var(--font-subheading--family)",
+                                                                                                                                                         "font_size":  "1rem",
+                                                                                                                                                         "line_height":  "tight",
+                                                                                                                                                         "letter_spacing":  "normal",
+                                                                                                                                                         "case":  "none",
+                                                                                                                                                         "wrap":  "pretty",
+                                                                                                                                                         "text_color":  "#FFFFFF",
+                                                                                                                                                         "background":  false,
+                                                                                                                                                         "background_color":  "{{ settings.color_palette.foreground }}",
+                                                                                                                                                         "corner_radius":  0,
+                                                                                                                                                         "padding-block-start":  0,
+                                                                                                                                                         "padding-block-end":  0,
+                                                                                                                                                         "padding-inline-start":  0,
+                                                                                                                                                         "padding-inline-end":  0
+                                                                                                                                                     },
+                                                                                                                                        "blocks":  {
+
+                                                                                                                                                   }
+                                                                                                                                    },
+                                                                                                           "price_JQzVV4":  {
+                                                                                                                                "type":  "price",
+                                                                                                                                "name":  "t:names.product_price",
+                                                                                                                                "settings":  {
+                                                                                                                                                 "show_sale_price_first":  true,
+                                                                                                                                                 "show_installments":  false,
+                                                                                                                                                 "show_tax_info":  false,
+                                                                                                                                                 "type_preset":  "custom",
+                                                                                                                                                 "width":  "100%",
+                                                                                                                                                 "alignment":  "left",
+                                                                                                                                                 "font":  "var(--font-body--family)",
+                                                                                                                                                 "font_size":  "1rem",
+                                                                                                                                                 "line_height":  "normal",
+                                                                                                                                                 "letter_spacing":  "normal",
+                                                                                                                                                 "case":  "none",
+                                                                                                                                                 "text_color":  "",
+                                                                                                                                                 "padding-block-start":  0,
+                                                                                                                                                 "padding-block-end":  0,
+                                                                                                                                                 "padding-inline-start":  0,
+                                                                                                                                                 "padding-inline-end":  0
+                                                                                                                                             },
+                                                                                                                                "blocks":  {
+
+                                                                                                                                           }
+                                                                                                                            }
+                                                                                                       },
+                                                                                            "block_order":  [
+                                                                                                                "product_card_gallery_677WP3",
+                                                                                                                "product_title_YXxMTj",
+                                                                                                                "price_JQzVV4"
+                                                                                                            ]
+                                                                                        }
+                                                            },
+                                                 "name":  "t:names.product_list",
+                                                 "settings":  {
+                                                                  "collection":  "neocaridina-shrimp",
+                                                                  "layout_type":  "grid",
+                                                                  "carousel_on_mobile":  true,
+                                                                  "max_products":  16,
+                                                                  "columns":  4,
+                                                                  "mobile_columns":  "2",
+                                                                  "mobile_card_size":  "60cqw",
+                                                                  "columns_gap":  10,
+                                                                  "rows_gap":  10,
+                                                                  "icons_style":  "chevron",
+                                                                  "icons_shape":  "square",
+                                                                  "section_width":  "page-width",
+                                                                  "horizontal_alignment":  "flex-end",
+                                                                  "gap":  20,
+                                                                  "background_color":  "#08120F",
+                                                                  "padding-block-start":  48,
+                                                                  "padding-block-end":  48
+                                                              }
+                                             },
+                     "collection_list_FPpaDB":  {
+                                                    "type":  "collection-list",
+                                                    "blocks":  {
+                                                                   "group_EJUexG":  {
+                                                                                        "type":  "group",
+                                                                                        "name":  "t:names.header",
+                                                                                        "settings":  {
+                                                                                                         "content_direction":  "column",
+                                                                                                         "vertical_on_mobile":  true,
+                                                                                                         "horizontal_alignment":  "flex-start",
+                                                                                                         "vertical_alignment":  "center",
+                                                                                                         "align_baseline":  false,
+                                                                                                         "horizontal_alignment_flex_direction_column":  "flex-start",
+                                                                                                         "vertical_alignment_flex_direction_column":  "center",
+                                                                                                         "gap":  12,
+                                                                                                         "width":  "fill",
+                                                                                                         "custom_width":  100,
+                                                                                                         "width_mobile":  "fill",
+                                                                                                         "custom_width_mobile":  100,
+                                                                                                         "height":  "fit",
+                                                                                                         "custom_height":  100,
+                                                                                                         "background_media":  "none",
+                                                                                                         "background_color":  "",
+                                                                                                         "video_position":  "cover",
+                                                                                                         "background_image_position":  "cover",
+                                                                                                         "toggle_overlay":  false,
+                                                                                                         "overlay_color":  "#00000026",
+                                                                                                         "overlay_style":  "solid",
+                                                                                                         "gradient_direction":  "to top",
+                                                                                                         "border":  "none",
+                                                                                                         "border_width":  1,
+                                                                                                         "border_opacity":  100,
+                                                                                                         "border_color":  "",
+                                                                                                         "border_radius":  0,
+                                                                                                         "link":  "",
+                                                                                                         "open_in_new_tab":  false,
+                                                                                                         "placeholder":  "",
+                                                                                                         "padding-block-start":  0,
+                                                                                                         "padding-block-end":  0,
+                                                                                                         "padding-inline-start":  0,
+                                                                                                         "padding-inline-end":  0
+                                                                                                     },
+                                                                                        "blocks":  {
+                                                                                                       "text_9AH6r4":  {
+                                                                                                                           "type":  "text",
+                                                                                                                           "name":  "t:names.text",
+                                                                                                                           "settings":  {
+                                                                                                                                            "text":  "\u003ch3\u003eBrowse our collections\u003c/h3\u003e",
+                                                                                                                                            "width":  "fit-content",
+                                                                                                                                            "max_width":  "normal",
+                                                                                                                                            "alignment":  "left",
+                                                                                                                                            "type_preset":  "rte",
+                                                                                                                                            "font":  "var(--font-heading--family)",
+                                                                                                                                            "font_size":  "",
+                                                                                                                                            "line_height":  "normal",
+                                                                                                                                            "letter_spacing":  "normal",
+                                                                                                                                            "case":  "none",
+                                                                                                                                            "wrap":  "pretty",
+                                                                                                                                            "text_color":  "",
+                                                                                                                                            "background":  false,
+                                                                                                                                            "background_color":  "#00000026",
+                                                                                                                                            "corner_radius":  0,
+                                                                                                                                            "padding-block-start":  0,
+                                                                                                                                            "padding-block-end":  16,
+                                                                                                                                            "padding-inline-start":  0,
+                                                                                                                                            "padding-inline-end":  0
+                                                                                                                                        },
+                                                                                                                           "blocks":  {
+
+                                                                                                                                      }
+                                                                                                                       }
+                                                                                                   },
+                                                                                        "block_order":  [
+                                                                                                            "text_9AH6r4"
+                                                                                                        ]
+                                                                                    },
+                                                                   "static-collection-card":  {
+                                                                                                  "type":  "_collection-card",
+                                                                                                  "name":  "t:names.collection_card",
+                                                                                                  "static":  true,
+                                                                                                  "settings":  {
+                                                                                                                   "placement":  "below_image",
+                                                                                                                   "horizontal_alignment":  "center",
+                                                                                                                   "vertical_alignment":  "center",
+                                                                                                                   "collection_card_gap":  0,
+                                                                                                                   "background_color":  "",
+                                                                                                                   "border":  "solid",
+                                                                                                                   "border_width":  1,
+                                                                                                                   "border_opacity":  100,
+                                                                                                                   "border_color":  "#2BB3A3",
+                                                                                                                   "border_radius":  0
+                                                                                                               },
+                                                                                                  "blocks":  {
+                                                                                                                 "collection_title_GRqPrg":  {
+                                                                                                                                                 "type":  "collection-title",
+                                                                                                                                                 "name":  "t:names.collection_title",
+                                                                                                                                                 "settings":  {
+                                                                                                                                                                  "width":  "100%",
+                                                                                                                                                                  "max_width":  "normal",
+                                                                                                                                                                  "alignment":  "center",
+                                                                                                                                                                  "type_preset":  "custom",
+                                                                                                                                                                  "font":  "var(--font-subheading--family)",
+                                                                                                                                                                  "font_size":  "",
+                                                                                                                                                                  "line_height":  "tight",
+                                                                                                                                                                  "letter_spacing":  "tight",
+                                                                                                                                                                  "case":  "none",
+                                                                                                                                                                  "wrap":  "pretty",
+                                                                                                                                                                  "background":  false,
+                                                                                                                                                                  "background_color":  "{{ settings.color_palette.foreground }}",
+                                                                                                                                                                  "text_color":  "{{ settings.color_palette.foreground }}",
+                                                                                                                                                                  "corner_radius":  10,
+                                                                                                                                                                  "padding-block-start":  5,
+                                                                                                                                                                  "padding-block-end":  5,
+                                                                                                                                                                  "padding-inline-start":  0,
+                                                                                                                                                                  "padding-inline-end":  0
+                                                                                                                                                              },
+                                                                                                                                                 "blocks":  {
+
+                                                                                                                                                            }
+                                                                                                                                             },
+                                                                                                                 "collection-card-image":  {
+                                                                                                                                               "type":  "_collection-card-image",
+                                                                                                                                               "name":  "t:names.collection_card_image",
+                                                                                                                                               "static":  true,
+                                                                                                                                               "settings":  {
+                                                                                                                                                                "image_ratio":  "square",
+                                                                                                                                                                "toggle_overlay":  false,
+                                                                                                                                                                "overlay_color":  "#00000026",
+                                                                                                                                                                "overlay_style":  "solid",
+                                                                                                                                                                "gradient_direction":  "to top",
+                                                                                                                                                                "border":  "none",
+                                                                                                                                                                "border_width":  1,
+                                                                                                                                                                "border_opacity":  100,
+                                                                                                                                                                "border_color":  "",
+                                                                                                                                                                "border_radius":  0
+                                                                                                                                                            },
+                                                                                                                                               "blocks":  {
+
+                                                                                                                                                          }
+                                                                                                                                           }
+                                                                                                             },
+                                                                                                  "block_order":  [
+                                                                                                                      "collection_title_GRqPrg"
+                                                                                                                  ]
+                                                                                              }
+                                                               },
+                                                    "block_order":  [
+                                                                        "group_EJUexG"
+                                                                    ],
+                                                    "name":  "t:names.collections_carousel",
+                                                    "settings":  {
+                                                                     "collection_list":  [
+                                                                                             "orange-eye-neocaridina-shrimp",
+                                                                                             "yellow-eye-neocaridina-shrimp",
+                                                                                             "culls",
+                                                                                             "aquatic-plants",
+                                                                                             "aquarium-equipment",
+                                                                                             "snails"
+                                                                                         ],
+                                                                     "layout_type":  "carousel",
+                                                                     "carousel_on_mobile":  false,
+                                                                     "columns":  4,
+                                                                     "mobile_columns":  "2",
+                                                                     "mobile_card_size":  "60cqw",
+                                                                     "columns_gap":  8,
+                                                                     "bento_gap":  8,
+                                                                     "rows_gap":  0,
+                                                                     "max_collections":  4,
+                                                                     "icons_style":  "arrow",
+                                                                     "icons_shape":  "circle",
+                                                                     "section_width":  "page-width",
+                                                                     "gap":  0,
+                                                                     "background_color":  "#0B1F1A",
+                                                                     "padding-block-start":  22,
+                                                                     "padding-block-end":  22
+                                                                 }
+                                                },
+                     "17907930702ecb4d62":  {
+                                                "type":  "_blocks",
+                                                "blocks":  {
+                                                               "divider_B8DHxC":  {
+                                                                                      "type":  "_divider",
+                                                                                      "name":  "t:names.divider",
+                                                                                      "settings":  {
+                                                                                                       "thickness":  1.5,
+                                                                                                       "corner_radius":  "square",
+                                                                                                       "divider_color":  "#fffaee",
+                                                                                                       "width_percent":  100,
+                                                                                                       "padding-block-start":  0,
+                                                                                                       "padding-block-end":  0
+                                                                                                   },
+                                                                                      "blocks":  {
+
+                                                                                                 }
+                                                                                  },
+                                                               "social_links_AmD6jC":  {
+                                                                                           "type":  "social-links",
+                                                                                           "name":  "t:names.social_media_links",
+                                                                                           "settings":  {
+                                                                                                            "icon_color":  "",
+                                                                                                            "facebook_url":  "https://www.facebook.com/sdaquaterraks",
+                                                                                                            "instagram_url":  "https://www.instagram.com/sdaquaterraks",
+                                                                                                            "youtube_url":  "",
+                                                                                                            "tiktok_url":  "",
+                                                                                                            "twitter_url":  "",
+                                                                                                            "threads_url":  "",
+                                                                                                            "linkedin_url":  "",
+                                                                                                            "bluesky_url":  "",
+                                                                                                            "snapchat_url":  "",
+                                                                                                            "pinterest_url":  "",
+                                                                                                            "tumblr_url":  "",
+                                                                                                            "vimeo_url":  "",
+                                                                                                            "custom_url":  ""
+                                                                                                        },
+                                                                                           "blocks":  {
+
+                                                                                                      }
+                                                                                       },
+                                                               "payment_icons_NcDCM3":  {
+                                                                                            "type":  "payment-icons",
+                                                                                            "name":  "t:names.payment_icons",
+                                                                                            "settings":  {
+                                                                                                             "horizontal_alignment":  "center",
+                                                                                                             "gap":  33,
+                                                                                                             "padding-block-start":  0,
+                                                                                                             "padding-block-end":  0,
+                                                                                                             "padding-inline-start":  0,
+                                                                                                             "padding-inline-end":  0
+                                                                                                         },
+                                                                                            "blocks":  {
+
+                                                                                                       }
+                                                                                        },
+                                                               "judge_me_reviews_cards_carousel_GaPtEN":  {
+                                                                                                              "type":  "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+                                                                                                              "settings":  {
+                                                                                                                               "show_sample_reviews":  false,
+                                                                                                                               "reviews_selection":  "product_reviews",
+                                                                                                                               "products":  [
+                                                                                                                                                "yellow-eye-red-neocaridina-painted-red-grade",
+                                                                                                                                                "orange-eye-blue-demon-culls-mixed-grade-neocaridina",
+                                                                                                                                                "10-1-orange-eye-blue-demon-neocaridina-shrimp-usa-bred",
+                                                                                                                                                "blue-ink-demon-orange-eye-neocaridina-shrimp-deep-blue-black-live-dwarf-shrimp"
+                                                                                                                                            ],
+                                                                                                                               "filter_pinned":  false,
+                                                                                                                               "filter_featured":  false,
+                                                                                                                               "filter_custom_tags":  "",
+                                                                                                                               "star_rating":  "all",
+                                                                                                                               "show_review_media":  true,
+                                                                                                                               "display_order":  "media_first",
+                                                                                                                               "no_image_fallback":  "review_text_only",
+                                                                                                                               "max_reviews":  20,
+                                                                                                                               "review_length":  "medium",
+                                                                                                                               "text_size":  "medium",
+                                                                                                                               "image_ratio":  "1",
+                                                                                                                               "reviews_shown":  4,
+                                                                                                                               "show_reviewer_name":  true,
+                                                                                                                               "show_product_name":  true,
+                                                                                                                               "hide_arrows_mobile":  true,
+                                                                                                                               "arrows_position":  "sides",
+                                                                                                                               "max_width":  1100,
+                                                                                                                               "corner_styling":  "soft",
+                                                                                                                               "header_text_color":  "#000000",
+                                                                                                                               "text_color":  "#000000",
+                                                                                                                               "card_color":  "#f9f9f9",
+                                                                                                                               "stars_color":  "",
+                                                                                                                               "arrows_color":  "#000000",
+                                                                                                                               "transition_speed":  5,
+                                                                                                                               "header_text":  "Our Customer Reviews",
+                                                                                                                               "show_average_rating":  true,
+                                                                                                                               "rating_display":  "default"
+                                                                                                                           }
+                                                                                                          }
+                                                           },
+                                                "block_order":  [
+                                                                    "divider_B8DHxC",
+                                                                    "social_links_AmD6jC",
+                                                                    "payment_icons_NcDCM3",
+                                                                    "judge_me_reviews_cards_carousel_GaPtEN"
+                                                                ],
+                                                "settings":  {
+                                                                 "content_direction":  "column",
+                                                                 "vertical_on_mobile":  true,
+                                                                 "horizontal_alignment":  "flex-start",
+                                                                 "vertical_alignment":  "center",
+                                                                 "align_baseline":  false,
+                                                                 "horizontal_alignment_flex_direction_column":  "center",
+                                                                 "vertical_alignment_flex_direction_column":  "center",
+                                                                 "gap":  10,
+                                                                 "section_width":  "page-width",
+                                                                 "section_height":  "",
+                                                                 "section_height_custom":  50,
+                                                                 "background_media":  "none",
+                                                                 "background_color":  "#043578",
+                                                                 "video_position":  "cover",
+                                                                 "background_image_position":  "cover",
+                                                                 "toggle_overlay":  false,
+                                                                 "overlay_color":  "#00000026",
+                                                                 "overlay_style":  "solid",
+                                                                 "gradient_direction":  "to top",
+                                                                 "border":  "none",
+                                                                 "border_width":  1,
+                                                                 "border_opacity":  100,
+                                                                 "border_color":  "",
+                                                                 "border_radius":  0,
+                                                                 "padding-block-start":  0,
+                                                                 "padding-block-end":  0
+                                                             }
+                                            },
+                     "1790799045bf232141":  {
+                                                "type":  "_blocks",
+                                                "settings":  {
+                                                                 "content_direction":  "column",
+                                                                 "vertical_on_mobile":  true,
+                                                                 "horizontal_alignment":  "flex-start",
+                                                                 "vertical_alignment":  "center",
+                                                                 "align_baseline":  false,
+                                                                 "horizontal_alignment_flex_direction_column":  "flex-start",
+                                                                 "vertical_alignment_flex_direction_column":  "center",
+                                                                 "gap":  12,
+                                                                 "section_width":  "page-width",
+                                                                 "section_height":  "",
+                                                                 "section_height_custom":  50,
+                                                                 "background_media":  "none",
+                                                                 "background_color":  "",
+                                                                 "video_position":  "cover",
+                                                                 "background_image_position":  "cover",
+                                                                 "toggle_overlay":  false,
+                                                                 "overlay_color":  "#00000026",
+                                                                 "overlay_style":  "solid",
+                                                                 "gradient_direction":  "to top",
+                                                                 "border":  "none",
+                                                                 "border_width":  1,
+                                                                 "border_opacity":  100,
+                                                                 "border_color":  "",
+                                                                 "border_radius":  0,
+                                                                 "padding-block-start":  0,
+                                                                 "padding-block-end":  0
+                                                             }
+                                            }
+                 },
+    "order":  [
+                  "hero_jVaWmY",
+                  "section_LUm4EG",
+                  "divider_i6Tqew",
+                  "product_list_fa6P9H",
+                  "collection_list_FPpaDB",
+                  "17907930702ecb4d62",
+                  "1790799045bf232141"
+              ]
+}

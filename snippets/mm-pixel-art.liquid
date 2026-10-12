@@ -1,0 +1,80 @@
+{% doc %}Moss & Molt pixel-art world layer: wave strips, scene backdrops, quest frames, pixel-cut buttons.{% enddoc %}
+{% style %}
+  .mm-px { image-rendering: pixelated; }
+
+  /* Hero meets the page with a pixel wave shoreline */
+  .hero { position: relative; }
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    inset-block-end: -1px;
+    height: 12px;
+    background: url("{{ 'mm-wave.svg' | asset_url }}") repeat-x left bottom / auto 12px;
+    image-rendering: pixelated;
+    z-index: 3;
+    pointer-events: none;
+  }
+
+  /* Footer opens with the same shoreline */
+  footer { position: relative; }
+  footer::before {
+    content: "";
+    display: block;
+    height: 12px;
+    background: url("{{ 'mm-wave.svg' | asset_url }}") repeat-x left top / auto 12px;
+    image-rendering: pixelated;
+  }
+
+  /* 404: lost-diver scene backdrop (dark floor zone keeps text readable) */
+  main[data-template="404"] {
+    background:
+      url("{{ 'mm-scene-wide.svg' | asset_url }}") center bottom / cover no-repeat,
+      #08120f;
+  }
+
+  /* Search: faint ambient bubbles, content stays the focus */
+  main[data-template="search"] {
+    background-image: url("{{ 'mm-bubbles.svg' | asset_url }}");
+    background-repeat: repeat;
+    background-size: 96px;
+  }
+
+  /* Quest-frame collection windows: double-cut game frame */
+  .collection-card {
+    border: 2px solid #2bb3a3;
+    outline: 2px solid #0b1f1a;
+    outline-offset: -7px;
+    border-radius: 2px;
+  }
+
+  /* Product photography gets pixel-cut corners — unmistakably Moss & Molt */
+  .product-card img {
+    clip-path: polygon(
+      0 6px, 6px 6px, 6px 0, calc(100% - 6px) 0,
+      calc(100% - 6px) 6px, 100% 6px, 100% calc(100% - 6px),
+      calc(100% - 6px) calc(100% - 6px), calc(100% - 6px) 100%,
+      6px 100%, 6px calc(100% - 6px), 0 calc(100% - 6px)
+    );
+  }
+
+  /* Primary actions press like game buttons; secondary stays clean */
+  .button {
+    clip-path: polygon(
+      0 5px, 5px 5px, 5px 0, calc(100% - 5px) 0,
+      calc(100% - 5px) 5px, 100% 5px, 100% calc(100% - 5px),
+      calc(100% - 5px) calc(100% - 5px), calc(100% - 5px) 100%,
+      5px 100%, 5px calc(100% - 5px), 0 calc(100% - 5px)
+    );
+    border-radius: 0;
+  }
+  .button:active { transform: translateY(2px); }
+
+  /* Badges read as tiny game tags */
+  .product-badges__badge {
+    clip-path: polygon(
+      0 3px, 3px 3px, 3px 0, calc(100% - 3px) 0,
+      calc(100% - 3px) 3px, 100% 3px, 100% 100%, 0 100%
+    );
+  }
+{% endstyle %}
