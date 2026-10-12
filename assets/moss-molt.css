@@ -287,3 +287,12 @@ img { max-width: 100%; }
   .product-card:hover, .collection-card:hover img { transform: none; }
 }
 
+
+/* ---------- N. Tank-kits coming-soon band ---------- */
+.mm-tank-band { text-align: center; max-width: 38rem; margin-inline: auto; }
+.mm-tank-band img { width: min(440px, 82vw); height: auto; margin-inline: auto; }
+.mm-tank-band h2 { font-size: clamp(2rem, 1.4rem + 2.5vw, 3rem); margin-block: 0.75rem; }
+.mm-tank-band p { margin-inline: auto; }
+@media (max-width: 749px) {
+  .mm-tank-band img { width: min(320px, 78vw); }
+}

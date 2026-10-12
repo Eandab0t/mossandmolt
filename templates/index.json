@@ -1321,7 +1321,24 @@
                                                                  "padding-block-start":  0,
                                                                  "padding-block-end":  0
                                                              }
-                                            }
+                                            },
+                     "tank_banner":  {
+                                         "type":  "custom-liquid",
+                                         "name":  "t:names.custom_liquid",
+                                         "settings":  {
+                                                          "custom_liquid":  "\u003cdiv class=\"mm-tank-band\"\u003e\u003cimg class=\"mm-px\" src=\"{{ \u0027mm-tank.svg\u0027 | asset_url }}\" alt=\"\" width=\"440\" height=\"292\" loading=\"lazy\"\u003e\u003cp class=\"mm-eyebrow\"\u003eCustom tank kits\u003c/p\u003e\u003ch2 class=\"mm-display\"\u003eComing soon.\u003c/h2\u003e\u003cp\u003eWe are working out the quirks \u0026mdash; original Moss \u0026amp; Molt tank kits are on the way. Join the email list below for first access.\u003c/p\u003e\u003c/div\u003e",
+                                                          "background_color":  "#0B1F1A",
+                                                          "section_width":  "page-width",
+                                                          "padding-block-start":  48,
+                                                          "padding-block-end":  48
+                                                      },
+                                         "blocks":  {
+
+                                                    },
+                                         "block_order":  [
+
+                                                         ]
+                                     }
                  },
     "order":  [
                   "hero_jVaWmY",
@@ -1329,6 +1346,7 @@
                   "divider_i6Tqew",
                   "product_list_fa6P9H",
                   "collection_list_FPpaDB",
+                  "tank_banner",
                   "17907930702ecb4d62",
                   "1790799045bf232141"
               ]
