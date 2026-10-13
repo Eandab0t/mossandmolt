@@ -29,3 +29,21 @@ rendering so fidelity gaps stay visible.
 ## What is faithful vs simulated
 
 See `qa/local-preview/FIDELITY.md`.
+
+
+## Cross-platform screenshot and verification commands
+
+From this folder, run `npm install`, then `npm start` to start the local preview.
+In a second terminal run `npm run test` to exercise the block-rendering regression
+check and browser product-card check. Run `npm run screenshots` to capture the
+four viewport sizes and generate the contact sheet.
+
+The screenshot and verification runners first check `CHROMIUM_PATH` or
+`PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH`, then common system browser locations,
+then Playwright's configured browser install. If Playwright Core cannot find a
+browser, install Chromium in your environment and set `CHROMIUM_PATH` to its
+executable. On Windows, set it to the full path to `chrome.exe`.
+
+Product names, prices and image URLs in `base.js` are fixtures for layout tests,
+not live inventory. Shopify checkout, app embeds, customer data and store APIs
+remain outside this local preview.
