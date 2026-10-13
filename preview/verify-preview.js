@@ -2,11 +2,12 @@
 // that product cards render visible image + title + price.
 // Run: node verify-preview.js [baseUrl]
 const { chromium } = require('playwright-core');
+const fs = require('fs');
 
 const EXE_CANDIDATES = [
   process.env.CHROMIUM_PATH,
   process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH,
-  'C:\\\\Users\\\\eacam\\\\AppData\\\\Local\\\\ms-playwright\\\\chromium-1243\\\\chrome-win64\\\\chrome.exe',
+  'C:\\Users\\eacam\\AppData\\Local\\ms-playwright\\chromium-1243\\chrome-win64\\chrome.exe',
   '/usr/bin/chromium',
   '/usr/bin/chromium-browser',
   '/usr/bin/google-chrome',
