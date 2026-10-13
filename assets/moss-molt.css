@@ -296,3 +296,95 @@ img { max-width: 100%; }
 @media (max-width: 749px) {
   .mm-tank-band img { width: min(320px, 78vw); }
 }
+
+
+/* ---------- Stage 1 refinement: shared rhythm and resilient layouts ---------- */
+:root {
+  --mm-space-1: 0.25rem;
+  --mm-space-2: 0.5rem;
+  --mm-space-3: 0.75rem;
+  --mm-space-4: 1rem;
+  --mm-space-5: 1.5rem;
+  --mm-space-6: 2rem;
+  --mm-space-7: 3rem;
+  --mm-space-8: 4rem;
+  --mm-text: #edf5ee;
+  --mm-muted: #b6c8bf;
+  --mm-surface: #102820;
+  --mm-surface-raised: #15372c;
+  --mm-border: rgb(182 200 191 / 0.2);
+  --mm-focus: #7fd4c1;
+  --mm-content-wide: 1240px;
+  --mm-content-reading: 68ch;
+}
+body {
+  color: var(--mm-text);
+  line-height: 1.55;
+}
+main.content-for-layout {
+  min-width: 0;
+}
+.shopify-section {
+  min-width: 0;
+}
+.shopify-section + .shopify-section {
+  border-block-start-color: var(--mm-border);
+}
+h1, h2, h3, h4 {
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+}
+p, li {
+  line-height: 1.65;
+}
+a {
+  text-underline-offset: 0.2em;
+}
+:where(a, button, input, select, textarea, summary):focus-visible {
+  outline: 2px solid var(--mm-focus);
+  outline-offset: 3px;
+}
+:where(.button, .button-secondary, button.button) {
+  min-height: 48px;
+  padding-inline: clamp(1rem, 2vw, 1.5rem);
+}
+:where(.product-card, .collection-card) {
+  min-width: 0;
+}
+:where(.product-card img, .collection-card img) {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+:where(.product-card .product-title, .collection-card__title) {
+  overflow-wrap: anywhere;
+}
+@media (min-width: 750px) {
+  .hero__content-wrapper {
+    padding-inline: clamp(1.5rem, 4vw, 4rem);
+  }
+}
+@media (max-width: 749px) {
+  :root {
+    --mm-space-7: 2.25rem;
+    --mm-space-8: 3rem;
+  }
+  .shopify-section + .shopify-section {
+    margin-block-start: 0;
+  }
+  :where(.product-card, .collection-card) {
+    overflow: hidden;
+  }
+  :where(.product-card .product-title, .collection-card__title) {
+    font-size: clamp(0.9rem, 3.8vw, 1rem);
+  }
+}
+@media (max-width: 359px) {
+  .hero h1, .hero h1.mm-display {
+    font-size: clamp(1.85rem, 8.4vw, 2.15rem);
+  }
+  :where(.button, .button-secondary, button.button) {
+    padding-inline: 0.85rem;
+    font-size: 0.9rem;
+  }
+}
