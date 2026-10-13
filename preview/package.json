@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test-content-for.js && node verify-preview.js",
+    "screenshots": "node shot.js"
+  },
   "dependencies": {
     "express": "^4.22.3",
     "liquidjs": "^10.30.0",
