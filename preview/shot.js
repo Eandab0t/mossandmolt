@@ -4,7 +4,19 @@ const { chromium } = require('playwright-core');
 const fs = require('fs');
 const path = require('path');
 
-const EXE = 'C:\\Users\\eacam\\AppData\\Local\\ms-playwright\\chromium-1243\\chrome-win64\\chrome.exe';
+const EXE_CANDIDATES = [
+  process.env.CHROMIUM_PATH,
+  process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH,
+  'C:\\\\Users\\\\eacam\\\\AppData\\\\Local\\\\ms-playwright\\\\chromium-1243\\\\chrome-win64\\\\chrome.exe',
+  '/usr/bin/chromium',
+  '/usr/bin/chromium-browser',
+  '/usr/bin/google-chrome',
+  '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
+].filter(Boolean);
+function chromiumOptions() {
+  const executablePath = EXE_CANDIDATES.find((p) => fs.existsSync(p));
+  return executablePath ? { executablePath, args: ['--no-sandbox'] } : { args: ['--no-sandbox'] };
+}
 const BASE = process.argv[2] || 'http://localhost:3000';
 const OUT = process.argv[3] || path.join(__dirname, '..', 'qa', 'local-preview');
 
@@ -25,7 +37,7 @@ const PAGES = [
 
 async function main() {
   fs.mkdirSync(OUT, { recursive: true });
-  const browser = await chromium.launch({ executablePath: EXE, args: ['--no-sandbox'] });
+  const browser = await chromium.launch(chromiumOptions());
   const errors = [];
   for (const [w, h] of VIEWPORTS) {
     const page = await browser.newPage({ viewport: { width: w, height: h } });
