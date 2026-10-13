@@ -3,7 +3,19 @@
 // Run: node verify-preview.js [baseUrl]
 const { chromium } = require('playwright-core');
 
-const EXE = 'C:\\Users\\eacam\\AppData\\Local\\ms-playwright\\chromium-1243\\chrome-win64\\chrome.exe';
+const EXE_CANDIDATES = [
+  process.env.CHROMIUM_PATH,
+  process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH,
+  'C:\\\\Users\\\\eacam\\\\AppData\\\\Local\\\\ms-playwright\\\\chromium-1243\\\\chrome-win64\\\\chrome.exe',
+  '/usr/bin/chromium',
+  '/usr/bin/chromium-browser',
+  '/usr/bin/google-chrome',
+  '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
+].filter(Boolean);
+function chromiumOptions() {
+  const executablePath = EXE_CANDIDATES.find((p) => fs.existsSync(p));
+  return executablePath ? { executablePath, args: ['--no-sandbox'] } : { args: ['--no-sandbox'] };
+}
 const BASE = process.argv[2] || 'http://localhost:3000';
 
 const CASES = [
@@ -14,7 +26,7 @@ const CASES = [
 ];
 
 (async () => {
-  const browser = await chromium.launch({ executablePath: EXE, args: ['--no-sandbox'] });
+  const browser = await chromium.launch(chromiumOptions());
   let failures = 0;
   for (const [name, url, w, h] of CASES) {
     const page = await browser.newPage({ viewport: { width: w, height: h } });
